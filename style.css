@@ -1,36 +1,34 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .dark-mode {
-    background-color: #121212;
+    background-color: #070047;
     color: #ffffff;
 }
 
 .light-mode {
     background-color: #ffffff;
-    color: #121212;
+    color: #070047;
 }
 
 /* Header */
 header {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures it's above other elements */
+    z-index: 1000;
     margin: 0 auto;
-    width: 80%; /* Adjust this value for desired width */
-    max-width: 900px; /* Optional: Cap the maximum width */
+    width: 80%;
+    max-width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background: #1e1e1e;
-    border-radius: 10px; /* Rounded corners for island effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 nav button {
@@ -63,37 +61,37 @@ section {
 
 /* Images and text sliding directions based on section order */
 section:nth-child(odd) .content img {
-    transform: translateX(-100%); /* Images slide in from the left for odd sections */
+    transform: translateX(-100%);
     opacity: 0;
     transition: transform 1s, opacity 1s;
 }
 
 section:nth-child(odd) .content div {
-    transform: translateX(100%); /* Text slides in from the right for odd sections */
+    transform: translateX(100%);
     opacity: 0;
     transition: transform 1s, opacity 1s;
 }
 
 section:nth-child(even) .content img {
-    transform: translateX(100%); /* Images slide in from the right for even sections */
+    transform: translateX(100%);
     opacity: 0;
     transition: transform 1s, opacity 1s;
 }
 
 section:nth-child(even) .content div {
-    transform: translateX(-100%); /* Text slides in from the left for even sections */
+    transform: translateX(-100%);
     opacity: 0;
     transition: transform 1s, opacity 1s;
 }
 
 /* Restrict image size */
 section .content img {
-    max-width: 300px; /* Adjust width as necessary */
-    max-height: 200px; /* Adjust height as necessary */
-    width: auto; /* Maintain aspect ratio */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: rounded corners for aesthetics */
-    margin: 10px; /* Optional: spacing around the image */
+    max-width: 300px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 /* Ensure all items transition into view correctly */
@@ -115,4 +113,3 @@ footer {
     color: #ffffff;
     text-decoration: none;
 }
-
