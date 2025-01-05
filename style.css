@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -13,7 +12,7 @@ body {
 }
 
 .light-mode {
-    background-color: #0a99ff; /* Light blue background */
+    background-color: #fae8c7; /* Light beige background */
     color: #000000; /* Black text */
 }
 
@@ -61,8 +60,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Required for particle positioning */
-    overflow: hidden; /* Prevents particles from spilling out */
 }
 
 .content {
@@ -70,74 +67,32 @@ section {
     align-items: center;
 }
 
-/* Particle Effects */
-.particle-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* Prevent interaction */
-    z-index: 1;
+/* Images and text sliding directions based on section order */
+section:nth-child(odd) .content img {
+    transform: translateX(-100%); /* Images slide in from the left for odd sections */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
-.particle {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    animation: float 3s infinite ease-in-out;
-    opacity: 0; /* Starts invisible */
+section:nth-child(odd) .content div {
+    transform: translateX(100%); /* Text slides in from the right for odd sections */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
-@keyframes float {
-    0% {
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-    100% {
-        transform: translate(100px, -100px);
-        opacity: 0;
-    }
+section:nth-child(even) .content img {
+    transform: translateX(100%); /* Images slide in from the right for even sections */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
-/* Particle Animation Keyframes */
-@keyframes dissipate {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(0.5);
-        opacity: 0;
-        filter: blur(3px);
-    }
+section:nth-child(even) .content div {
+    transform: translateX(-100%); /* Text slides in from the left for even sections */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
-@keyframes reappear {
-    0% {
-        transform: scale(0.5);
-        opacity: 0;
-        filter: blur(3px);
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-        filter: blur(0);
-    }
-}
-
-/* Section animation classes */
-section.dissipate {
-    animation: dissipate 1s forwards;
-}
-
-section.reappear {
-    animation: reappear 1s forwards;
-}
-
-/* Images and text styling */
+/* Restrict image size */
 section .content img {
     max-width: 300px; /* Adjust width as necessary */
     max-height: 200px; /* Adjust height as necessary */
@@ -145,7 +100,6 @@ section .content img {
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: rounded corners for aesthetics */
     margin: 10px; /* Optional: spacing around the image */
-    border: 2px solid #1e1e1e; /* Match header border */
 }
 
 section .content img:hover {
@@ -154,13 +108,11 @@ section .content img:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-section .content div {
-    padding: 20px;
-    border: 2px solid #1e1e1e; /* Match header border */
-    border-radius: 10px; /* Rounded corners */
-    background: #292929; /* Match header background */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    max-width: 600px; /* Adjust for desired text width */
+/* Ensure all items transition into view correctly */
+section.visible .content img,
+section.visible .content div {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 /* Footer */
@@ -180,4 +132,20 @@ footer {
 .footer-links a:hover {
     text-decoration: underline;
     color: #4CAF50;
+}
+
+/* Border styling similar to the header */
+section .content div {
+    padding: 20px;
+    border: 2px solid #1e1e1e; /* Match header border */
+    border-radius: 10px; /* Rounded corners */
+    background: #292929; /* Match header background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    max-width: 600px; /* Adjust for desired text width */
+}
+
+/* Border around images */
+section .content img {
+    border: 2px solid #1e1e1e; /* Match header border */
+    border-radius: 10px; /* Rounded corners */
 }
