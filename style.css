@@ -1,130 +1,107 @@
+/* General styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #F8F9FA;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #F8F9FA;
+    color: #333;
 }
 
-header {
+header.hover-header {
     position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #FFF;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     z-index: 1000;
+    width: fit-content;
 }
 
-.navbar .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #007BFF;
-}
-
-.navbar ul {
-    list-style: none;
+.header-content {
     display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #343A40;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.navbar ul li a:hover {
-    color: #007BFF;
-}
-
-#darkModeToggle {
-    margin-left: auto;
-    padding: 5px 15px;
-    border: none;
-    background: linear-gradient(to right, #007BFF, #6A5ACD);
-    color: #FFF;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-#darkModeToggle:hover {
-    background: linear-gradient(to right, #6A5ACD, #007BFF);
-}
-
-/* Hero Section */
-#hero {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #F8F9FA;
-    text-align: center;
-    padding: 20px;
+    gap: 15px;
 }
 
-#hero h1 {
-    font-size: 2.5em;
-    color: #343A40;
-}
-
-#hero h2 {
-    font-size: 1.8em;
-    color: #6A5ACD;
-    margin: 10px 0;
-}
-
-#hero p {
-    font-size: 1.2em;
-    margin: 20px 0;
-}
-
-.cta-buttons button {
-    padding: 10px 20px;
-    border: none;
-    margin: 10px;
-    font-size: 1em;
-    color: #FFF;
+.nav-button {
     background: linear-gradient(to right, #007BFF, #6A5ACD);
+    color: #FFF;
+    padding: 10px 15px;
+    border: none;
     border-radius: 5px;
+    font-size: 1em;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
 }
 
-.cta-buttons button:hover {
+.nav-button:hover {
     background: linear-gradient(to right, #6A5ACD, #007BFF);
 }
 
-/* Dark Mode */
+.dark-mode-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.dark-mode-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.dark-mode-toggle label {
+    background-color: #CCC;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    position: relative;
+    width: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle label .toggle {
+    background-color: white;
+    border-radius: 50%;
+    content: "";
+    height: 19px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    transition: transform 0.3s ease;
+    width: 19px;
+}
+
+.dark-mode-toggle input:checked + label {
+    background-color: #6A5ACD;
+}
+
+.dark-mode-toggle input:checked + label .toggle {
+    transform: translateX(25px);
+}
+
+/* Dark mode styles */
 .dark-mode {
     background-color: #343A40;
     color: #FFF;
 }
 
-.dark-mode header {
-    background-color: #23272A;
-    color: #FFF;
+.dark-mode .hover-header {
+    background-color: rgba(35, 39, 42, 0.9);
 }
 
-.dark-mode a {
-    color: #FFF;
-}
-
-.dark-mode a:hover {
-    color: #007BFF;
-}
-
-.dark-mode #darkModeToggle {
+.dark-mode .nav-button {
     background: linear-gradient(to right, #6A5ACD, #007BFF);
+}
+
+.dark-mode .dark-mode-toggle label {
+    background-color: #007BFF;
 }

@@ -8,19 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">Dolfie</div>
+    <header class="hover-header">
+        <div class="header-content">
             <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#work">Work Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
+                <button class="nav-button" onclick="window.location.href='#about'">About Me</button>
+                <button class="nav-button" onclick="window.location.href='#work'">Work Experience</button>
+                <button class="nav-button" onclick="window.location.href='#skills'">Skills</button>
+                <button class="nav-button" onclick="window.location.href='#projects'">Projects</button>
+                <button class="nav-button" onclick="window.location.href='#contact'">Contact Me</button>
             </nav>
-            <button id="darkModeToggle">Dark Mode</button>
+            <div class="dark-mode-toggle">
+                <input type="checkbox" id="darkModeCheckbox" />
+                <label for="darkModeCheckbox">
+                    <span class="toggle"></span>
+                </label>
+            </div>
         </div>
     </header>
 
@@ -38,63 +40,32 @@
 
     <section id="about">
         <h2>Who I Am</h2>
-        <div class="traits">
-            <div class="trait">
-                <img src="icons/gaming.png" alt="Gaming Icon">
-                <h3>Gaming Enthusiast</h3>
-                <p>Passionate about VR, Racing Sims, and FPS games.</p>
-            </div>
-            <div class="trait">
-                <img src="icons/it.png" alt="IT Icon">
-                <h3>IT Innovator</h3>
-                <p>Streamlining workflows with technical expertise.</p>
-            </div>
-        </div>
+        <!-- About section content -->
     </section>
 
     <section id="work">
         <h2>My Expertise</h2>
-        <div class="skills-grid">
-            <div class="skill">
-                <h3>System Administration</h3>
-                <p>Expertise in hybrid infrastructures and security protocols.</p>
-            </div>
-            <div class="skill">
-                <h3>IT Coordination</h3>
-                <p>Ensuring seamless workflows and user authentication.</p>
-            </div>
-        </div>
+        <!-- Work experience content -->
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <!-- Skills content -->
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project-carousel">
-            <div class="project">
-                <h3>Project Title</h3>
-                <p>Brief description of the project.</p>
-            </div>
-        </div>
+        <!-- Projects content -->
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/example" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
+        <!-- Contact form -->
     </section>
 
     <script>
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        darkModeToggle.addEventListener('click', () => {
+        const darkModeCheckbox = document.getElementById('darkModeCheckbox');
+        darkModeCheckbox.addEventListener('change', () => {
             document.body.classList.toggle('dark-mode');
         });
     </script>
