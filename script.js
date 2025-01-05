@@ -1,3 +1,14 @@
+// Show the loader initially and hide the main content
+const loader = document.getElementById('loader');
+const mainContent = document.getElementById('main-content');
+
+mainContent.style.display = 'none'; // Hide the main content initially
+
+// Hide the loader and display the main content after 8 seconds
+setTimeout(() => {
+    loader.style.display = 'none';
+    mainContent.style.display = 'block'; // Show the main content
+}, 8000);
 
 // Track the last scroll position to determine scroll direction
 let lastScrollPosition = 0;

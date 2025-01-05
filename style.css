@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -149,4 +148,21 @@ section .content div {
 section .content img {
     border: 2px solid #1e1e1e; /* Match header border */
     border-radius: 10px; /* Rounded corners */
+}
+
+/* Pre-loader styling */
+#loader {
+    position: fixed; /* Ensure it stays in the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    background-color: #121212; /* Match the dark mode background */
+    color: #ffffff;
+    z-index: 10000; /* Keep it above other content */
+    font-size: 24px; /* Adjust font size for visibility */
+    font-family: Arial, sans-serif; /* Match overall website font */
 }
