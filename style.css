@@ -12,8 +12,8 @@ body {
 }
 
 .light-mode {
-    background-color: #ffffff;
-    color: #121212;
+    background-color: #0a99ff; /* Light blue background */
+    color: #000000; /* Black text */
 }
 
 /* Header */
