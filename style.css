@@ -86,6 +86,16 @@ section:nth-child(even) .content div {
     transition: transform 1s, opacity 1s;
 }
 
+/* Restrict image size */
+section .content img {
+    max-width: 300px; /* Adjust width as necessary */
+    max-height: 200px; /* Adjust height as necessary */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners for aesthetics */
+    margin: 10px; /* Optional: spacing around the image */
+}
+
 /* Ensure all items transition into view correctly */
 section.visible .content img,
 section.visible .content div {
@@ -105,3 +115,4 @@ footer {
     color: #ffffff;
     text-decoration: none;
 }
+
