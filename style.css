@@ -18,12 +18,21 @@ body {
 
 /* Header */
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it's above other elements */
+    margin: 0 auto;
+    width: 80%; /* Adjust this value for desired width */
+    max-width: 900px; /* Optional: Cap the maximum width */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background: #1e1e1e;
+    border-radius: 10px; /* Rounded corners for island effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
+
 
 nav button {
     margin: 0 10px;
