@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,70 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NJ - Innovating IT Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
 </head>
 <body class="dark-mode">
-    <header>
-        <div class="header-container">
-            <h1>Hello World by NJ</h1>
-            <nav>
-                <button onclick="scrollToSection('about')">About Me</button>
-                <button onclick="scrollToSection('experience')">My Experience</button>
-                <button onclick="scrollToSection('projects')">My Projects</button>
-                <button onclick="scrollToSection('contact')">Contact Me</button>
-                <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
-            </nav>
-        </div>
-    </header>
+    <div id="loader">
+        <h1>Loading...</h1>
+    </div>
 
-    <section id="about">
-        <div class="content">
-            <img src="images/about.jpg" alt="About Me">
-            <div>
-                <h2>About Me</h2>
-                <p>I'm a passionate car enthusiast who loves the thrill of drifting, especially in my JDM pride and joy, a 350Z. When I'm not hitting the track, you'll find me immersed in gaming—whether it's VR, Sim racing, or FPS battles. IT is my lifelong fascination and the driving force behind my curiosity and creativity. For me, technology and adrenaline are the perfect combo!</p>
+    <main id="main-content">
+        <!-- Main page graphic -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to NJ's World</h1>
+                <p>Discover My Projects, Experiences, and More</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience">
-        <div class="content">
-            <img src="images/experience.jpg" alt="My Experience">
-            <div>
-                <h2>My Experience</h2>
-                <p>I am a highly skilled IT professional with over eight years of expertise in system administration, IT coordination, and secure user authentication. I specialize in managing complex IT infrastructures, including Azure AD, Office 365, firewalls, and hybrid environments. My experience includes implementing secure protocols like SSO and MFA, automating identity lifecycle processes, and ensuring compliance with GDPR, ISO 27001, ISAE 3402, and SOC2. I excel at optimizing workflows, managing IT budgets, and leading teams to deliver exceptional technical support and infrastructure improvements.</p>
+        <!-- Cards Section -->
+        <section id="cards">
+            <h2>Explore</h2>
+            <div class="cards-container">
+                <div class="card" onclick="scrollToSection('about')">
+                    <p class="heading">About Me</p>
+                    <p>Learn more about my journey</p>
+                </div>
+                <div class="card" onclick="scrollToSection('projects')">
+                    <p class="heading">My Projects</p>
+                    <p>See what I've been working on</p>
+                </div>
+                <div class="card" onclick="scrollToSection('experience')">
+                    <p class="heading">Experience</p>
+                    <p>My professional background</p>
+                </div>
+                <div class="card" onclick="scrollToSection('contact')">
+                    <p class="heading">Contact Me</p>
+                    <p>Let's connect!</p>
+                </div>
+                <div class="card">
+                    <p class="heading">Placeholder</p>
+                    <p>Details coming soon</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects">
-        <div class="content">
-            <img src="images/project1.jpg" alt="Projects">
-            <div>
-                <h2>My Projects</h2>
-                <p>Check out my GitHub repository for amazing projects like this! I have always tried to stay open source and give credit where credit is due. I love making tools, so you can find them all here.</p>
-            </div>
-        </div>
-    </section>
+        <!-- Existing Sections -->
+        <section id="about">...</section>
+        <section id="experience">...</section>
+        <section id="projects">...</section>
+        <section id="contact">...</section>
+    </main>
 
-    <section id="contact">
-        <div class="content">
-            <img src="images/contact.jpg" alt="Contact Me">
-            <div>
-                <h2>Contact Me</h2>
-                <p>Feel free to reach out to me via njvanas[at]gmail[dot]com.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Dolfie. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="#">Support Me</a>
-            <a href="https://www.linkedin.com/in/njvanas/" target="_blank">LinkedIn</a>
-            <a href="mailto:njvanas@gmail.com">Email</a>
-            <a href="https://github.com/njvanas" target="_blank">GitHub</a>
-        </div>
-    </footer>
+    <footer>...</footer>
 
     <script src="script.js"></script>
 </body>

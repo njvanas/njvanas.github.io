@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -67,12 +68,29 @@ section {
     align-items: center;
 }
 
-/* Remove sliding and fading transitions */
-section .content img,
-section .content div {
-    transform: none; /* No sliding effect */
-    opacity: 1; /* Fully visible without fading */
-    transition: none; /* Disable transition animations */
+/* Images and text sliding directions based on section order */
+section:nth-child(odd) .content img {
+    transform: translateX(-100%); /* Images slide in from the left for odd sections */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+section:nth-child(odd) .content div {
+    transform: translateX(100%); /* Text slides in from the right for odd sections */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+section:nth-child(even) .content img {
+    transform: translateX(100%); /* Images slide in from the right for even sections */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+section:nth-child(even) .content div {
+    transform: translateX(-100%); /* Text slides in from the left for even sections */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
 /* Restrict image size */
@@ -89,6 +107,13 @@ section .content img:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ensure all items transition into view correctly */
+section.visible .content img,
+section.visible .content div {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 /* Footer */
