@@ -1,34 +1,36 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .dark-mode {
-    background-color: #070047;
+    background-color: #121212;
     color: #ffffff;
 }
 
 .light-mode {
     background-color: #ffffff;
-    color: #070047;
+    color: #121212;
 }
 
 /* Header */
 header {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; /* Ensures it's above other elements */
     margin: 0 auto;
-    width: 80%;
-    max-width: 900px;
+    width: 80%; /* Adjust this value for desired width */
+    max-width: 900px; /* Optional: Cap the maximum width */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* Rounded corners for island effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 nav button {
@@ -39,11 +41,17 @@ nav button {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 10px;
-    transition: transform 0.2s;
+    transition: transform 0.2s ease-out, background-color 0.3s ease;
 }
 
 nav button:hover {
     transform: scale(1.1);
+}
+
+nav button.active {
+    background-color: #4CAF50;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
 }
 
 /* Section */
@@ -61,37 +69,43 @@ section {
 
 /* Images and text sliding directions based on section order */
 section:nth-child(odd) .content img {
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Images slide in from the left for odd sections */
     opacity: 0;
-    transition: transform 1s, opacity 1s;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
 section:nth-child(odd) .content div {
-    transform: translateX(100%);
+    transform: translateX(100%); /* Text slides in from the right for odd sections */
     opacity: 0;
-    transition: transform 1s, opacity 1s;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
 section:nth-child(even) .content img {
-    transform: translateX(100%);
+    transform: translateX(100%); /* Images slide in from the right for even sections */
     opacity: 0;
-    transition: transform 1s, opacity 1s;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
 section:nth-child(even) .content div {
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Text slides in from the left for even sections */
     opacity: 0;
-    transition: transform 1s, opacity 1s;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
 /* Restrict image size */
 section .content img {
-    max-width: 300px;
-    max-height: 200px;
-    width: auto;
-    height: auto;
-    border-radius: 10px;
-    margin: 10px;
+    max-width: 300px; /* Adjust width as necessary */
+    max-height: 200px; /* Adjust height as necessary */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners for aesthetics */
+    margin: 10px; /* Optional: spacing around the image */
+}
+
+section .content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Ensure all items transition into view correctly */
@@ -112,4 +126,10 @@ footer {
     margin: 0 10px;
     color: #ffffff;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #4CAF50;
 }
