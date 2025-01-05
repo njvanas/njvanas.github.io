@@ -1,0 +1,347 @@
+{
+  "placeholder_project": {
+    "stars_count": 1217,
+    "pulls_count": 23,
+    "issues_count": 45,
+    "commits": 1549,
+    "profile": {
+      "username": "placeholder_project",
+      "realName": "Eduard Ursu",
+      "bio": null,
+      "avatar": "https://avatars.githubusercontent.com/u/39910418?v=4",
+      "location": "Rome , Italy",
+      "repos": 27,
+      "repos_url": "https://api.github.com/users/placeholder_project/repos",
+      "followers": 388,
+      "following": 5,
+      "url": "https://github.com/placeholder_project",
+      "notFound": null,
+      "public_gists": 0,
+      "blog": "https://placeholder_project.github.io/",
+      "company": null
+    },
+    "repos": {
+      "placeholder_project/Apteryx-Game": {
+        "full_name": "placeholder_project/Apteryx-Game",
+        "name": "Apteryx-Game",
+        "stars": 13,
+        "forks": 2,
+        "description": "Modified version of the classic T-Rex Game made for KiwiBrowser",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/Apteryx-Game",
+        "language": "HTML"
+      },
+      "placeholder_project/awesome-extensions-for-kiwi": {
+        "full_name": "placeholder_project/awesome-extensions-for-kiwi",
+        "name": "awesome-extensions-for-kiwi",
+        "stars": 38,
+        "forks": 5,
+        "description": "An awesome list of open and privacy-friendly extensions for Kiwi Browser",
+        "fork": false,
+        "open_issues": 2,
+        "url": "https://github.com/placeholder_project/awesome-extensions-for-kiwi",
+        "language": "CSS"
+      },
+      "placeholder_project/b2ntp": {
+        "full_name": "placeholder_project/b2ntp",
+        "name": "b2ntp",
+        "stars": 76,
+        "forks": 7,
+        "description": "Kanban style New Tab Page extension with your bookmarks and powerful search",
+        "fork": false,
+        "open_issues": 5,
+        "url": "https://github.com/placeholder_project/b2ntp",
+        "language": "JavaScript"
+      },
+      "placeholder_project/bouncydvd": {
+        "full_name": "placeholder_project/bouncydvd",
+        "name": "bouncydvd",
+        "stars": 6,
+        "forks": 1,
+        "description": "Classic bouncing DVD logo recreated in Rainmeter",
+        "fork": false,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/bouncydvd",
+        "language": "Lua"
+      },
+      "placeholder_project/cws-mobile": {
+        "full_name": "placeholder_project/cws-mobile",
+        "name": "cws-mobile",
+        "stars": 18,
+        "forks": 1,
+        "description": "A script to be injected into the Chrome Web Store to make it mobile friendly ",
+        "fork": false,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/cws-mobile",
+        "language": "JavaScript"
+      },
+      "placeholder_project/placeholder_project": {
+        "full_name": "placeholder_project/placeholder_project",
+        "name": "placeholder_project",
+        "stars": 6,
+        "forks": 4,
+        "description": "null",
+        "fork": false,
+        "open_issues": 1,
+        "url": "https://github.com/placeholder_project/placeholder_project",
+        "language": "null"
+      },
+      "placeholder_project/placeholder_project.github.io": {
+        "full_name": "placeholder_project/placeholder_project.github.io",
+        "name": "placeholder_project.github.io",
+        "stars": 6,
+        "forks": 2,
+        "description": "null",
+        "fork": false,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/placeholder_project.github.io",
+        "language": "EJS"
+      },
+      "placeholder_project/discord-open-source": {
+        "full_name": "placeholder_project/discord-open-source",
+        "name": "discord-open-source",
+        "stars": 4,
+        "forks": 0,
+        "description": "List of open source communities living on Discord",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/discord-open-source",
+        "language": "null"
+      },
+      "placeholder_project/Famicomrade.github.io": {
+        "full_name": "placeholder_project/Famicomrade.github.io",
+        "name": "Famicomrade.github.io",
+        "stars": 1,
+        "forks": 0,
+        "description": "null",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/Famicomrade.github.io",
+        "language": "HTML"
+      },
+      "placeholder_project/floatly": {
+        "full_name": "placeholder_project/floatly",
+        "name": "floatly",
+        "stars": 74,
+        "forks": 7,
+        "description": "An extension that adds a floating button for browser quick actions ",
+        "fork": false,
+        "open_issues": 11,
+        "url": "https://github.com/placeholder_project/floatly",
+        "language": "JavaScript"
+      },
+      "placeholder_project/letsblockit": {
+        "full_name": "placeholder_project/letsblockit",
+        "name": "letsblockit",
+        "stars": 5,
+        "forks": 1,
+        "description": "A collection of custom uBlock filters to hide low-value content.",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/letsblockit",
+        "language": "null"
+      },
+      "placeholder_project/letsplaytime": {
+        "full_name": "placeholder_project/letsplaytime",
+        "name": "letsplaytime",
+        "stars": 3,
+        "forks": 1,
+        "description": "null",
+        "fork": false,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/letsplaytime",
+        "language": "JavaScript"
+      },
+      "placeholder_project/mti": {
+        "full_name": "placeholder_project/mti",
+        "name": "mti",
+        "stars": 35,
+        "forks": 6,
+        "description": "Meta Theme Injector let you customize the theme-color meta tag",
+        "fork": false,
+        "open_issues": 1,
+        "url": "https://github.com/placeholder_project/mti",
+        "language": "JavaScript"
+      },
+      "placeholder_project/nextntp": {
+        "full_name": "placeholder_project/nextntp",
+        "name": "nextntp",
+        "stars": 73,
+        "forks": 9,
+        "description": "Higly customizable and mobile friendly startpage",
+        "fork": false,
+        "open_issues": 15,
+        "url": "https://github.com/placeholder_project/nextntp",
+        "language": "HTML"
+      },
+      "placeholder_project/ntp": {
+        "full_name": "placeholder_project/ntp",
+        "name": "ntp",
+        "stars": 16,
+        "forks": 2,
+        "description": "New Tab Page for Kiwi Browser ",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/ntp",
+        "language": "JavaScript"
+      },
+      "placeholder_project/plexus": {
+        "full_name": "placeholder_project/plexus",
+        "name": "plexus",
+        "stars": 2,
+        "forks": 0,
+        "description": "Remove the fear of Android app compatibility on de-Googled devices.",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/plexus",
+        "language": "JavaScript"
+      },
+      "placeholder_project/Save-Tabs": {
+        "full_name": "placeholder_project/Save-Tabs",
+        "name": "Save-Tabs",
+        "stars": 4,
+        "forks": 0,
+        "description": "Export and Import Tabs with Cross-Browser support.",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/Save-Tabs",
+        "language": "null"
+      },
+      "placeholder_project/scriptz": {
+        "full_name": "placeholder_project/scriptz",
+        "name": "scriptz",
+        "stars": 97,
+        "forks": 6,
+        "description": "An awesome collection of userscripts",
+        "fork": false,
+        "open_issues": 3,
+        "url": "https://github.com/placeholder_project/scriptz",
+        "language": "JavaScript"
+      },
+      "placeholder_project/simple-icons": {
+        "full_name": "placeholder_project/simple-icons",
+        "name": "simple-icons",
+        "stars": 2,
+        "forks": 0,
+        "description": "SVG icons for popular brands",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/simple-icons",
+        "language": "null"
+      },
+      "placeholder_project/spa": {
+        "full_name": "placeholder_project/spa",
+        "name": "spa",
+        "stars": 2,
+        "forks": 0,
+        "description": "Project it's now moved to Techlore Website",
+        "fork": false,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/spa",
+        "language": "HTML"
+      },
+      "placeholder_project/src.next": {
+        "full_name": "placeholder_project/src.next",
+        "name": "src.next",
+        "stars": 15,
+        "forks": 0,
+        "description": "Source-code for Kiwi Next, a Kiwi Browser auto-rebased with latest Chromium",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/src.next",
+        "language": "C++"
+      },
+      "placeholder_project/taskm": {
+        "full_name": "placeholder_project/taskm",
+        "name": "taskm",
+        "stars": 5,
+        "forks": 1,
+        "description": "Progetto SIW 2020 - Task Manager",
+        "fork": false,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/taskm",
+        "language": "Java"
+      },
+      "placeholder_project/toolz": {
+        "full_name": "placeholder_project/toolz",
+        "name": "toolz",
+        "stars": 708,
+        "forks": 73,
+        "description": " Easy-to-use interface and extensive collection of testing tools for optimizing performance and user experience. Test fonts, viewport units, ad blockers, and more.",
+        "fork": false,
+        "open_issues": 11,
+        "url": "https://github.com/placeholder_project/toolz",
+        "language": "EJS"
+      },
+      "placeholder_project/umami-d3": {
+        "full_name": "placeholder_project/umami-d3",
+        "name": "umami-d3",
+        "stars": 1,
+        "forks": 0,
+        "description": "Umami is a simple, fast, privacy-focused alternative to Google Analytics.",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/umami-d3",
+        "language": "TypeScript"
+      },
+      "placeholder_project/VPN-reviews": {
+        "full_name": "placeholder_project/VPN-reviews",
+        "name": "VPN-reviews",
+        "stars": 4,
+        "forks": 0,
+        "description": "Transparent, community-driven VPN reviews. ",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/VPN-reviews",
+        "language": "null"
+      },
+      "placeholder_project/website": {
+        "full_name": "placeholder_project/website",
+        "name": "website",
+        "stars": 2,
+        "forks": 0,
+        "description": "Home of Techlore - Spreading privacy & security to the masses.",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/website",
+        "language": "null"
+      },
+      "placeholder_project/winstall": {
+        "full_name": "placeholder_project/winstall",
+        "name": "winstall",
+        "stars": 1,
+        "forks": 0,
+        "description": "An intuitive interface for browsing and installing Windows Package Manager apps. ",
+        "fork": true,
+        "open_issues": 0,
+        "url": "https://github.com/placeholder_project/winstall",
+        "language": "JavaScript"
+      },
+      "kiwibrowser/src.next": {
+        "name": "src.next",
+        "stars": 1779,
+        "forks": 241,
+        "description": "Source-code for Kiwi Next, a Kiwi Browser auto-rebased with latest Chromium",
+        "url": "https://github.com/kiwibrowser/src.next",
+        "language": "C++"
+      },
+      "techlore/website": {
+        "name": "website",
+        "stars": 55,
+        "forks": 15,
+        "description": "Home of Techlore - Spreading privacy & security to the masses.",
+        "url": "https://github.com/techlore/website",
+        "language": "HTML"
+      },
+      "Famicomrade/Famicomrade.github.io": {
+        "name": "Famicomrade.github.io",
+        "stars": 9,
+        "forks": 6,
+        "description": null,
+        "url": "https://github.com/Famicomrade/Famicomrade.github.io",
+        "language": "HTML"
+      }
+    }
+  }
+}
