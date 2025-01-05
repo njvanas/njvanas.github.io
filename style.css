@@ -16,44 +16,54 @@ body {
     color: #000000; /* Black text */
 }
 
-/* Header */
+
+/* Updated Header */
 header {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures it's above other elements */
-    margin: 0 auto;
-    width: 80%; /* Adjust this value for desired width */
-    max-width: 900px; /* Optional: Cap the maximum width */
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: #1e1e1e;
-    border-radius: 10px; /* Rounded corners for island effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    padding: 10px 20px;
+    background: #0d1117;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
 }
 
 nav button {
-    margin: 0 10px;
-    background: #292929;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 16px;
+    border: 2px solid transparent;
+    padding: 10px 15px;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 10px;
-    transition: transform 0.2s ease-out, background-color 0.3s ease;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 nav button:hover {
-    transform: scale(1.1);
+    background-color: #21262d;
+    border-color: #58a6ff;
 }
 
 nav button.active {
-    background-color: #4CAF50;
+    background-color: #58a6ff;
     color: #ffffff;
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    border-color: #58a6ff;
 }
-
 /* Section */
 section {
     padding: 60px;
