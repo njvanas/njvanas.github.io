@@ -1,4 +1,4 @@
-/* Loader Styles */
+/* From Uiverse.io by StealthWorm */ 
 .loader {
   margin: 0 auto;
   display: flex;
@@ -13,32 +13,6 @@
   border: 0.4rem solid #52c5ff;
 }
 
-/* Pre-loader visibility rules */
-body.loading #main-content,
-body.loading header,
-body.loading footer {
-    display: none; /* Hide header, footer, and main content */
-}
-
-body.loading #preloader {
-    display: flex; /* Ensure the loader is visible */
-    height: 100vh; /* Full-screen height for the loader */
-    justify-content: center;
-    align-items: center;
-    background: #121212; /* Background color to match the pre-loader */
-}
-
-body.loaded #preloader {
-    display: none; /* Hide the loader after loading */
-}
-
-body.loaded #main-content,
-body.loaded header,
-body.loaded footer {
-    display: block; /* Show the rest of the website */
-}
-
-/* Animation styles */
 .container[class*="1"] {
   animation-delay: 1s;
 }
@@ -127,14 +101,14 @@ body.loaded footer {
   & .r::before,
   & .l::before {
     position: absolute;
-    content: '';
-    width: 95%;
-    height: 5px;
-    left: 0;
-    top: 25%;
-    border: 1px solid #52c5ff;
-    overflow: hidden;
-  }
+  content: '';
+  width: 95%;
+  height: 5px;
+  left: 0;
+  top: 25%;
+  border: 1px solid #52c5ff;
+  overflow: hidden;
+}
 }
 
 .container:nth-child(1) .b::before,
