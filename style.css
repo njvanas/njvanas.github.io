@@ -1,18 +1,19 @@
+/* General Body Styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Dark Mode */
 .dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #121212; /* Dark gray background */
+    color: #ffffff; /* White text */
 }
 
+/* Light Mode */
 .light-mode {
-    background-color: #0a99ff; /* Light blue background */
+    background-color: #0a99ff; /* Light turquoise background */
     color: #000000; /* Black text */
 }
 
@@ -20,28 +21,44 @@ body {
 header {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures it's above other elements */
-    margin: 0 auto;
-    width: 80%; /* Adjust this value for desired width */
-    max-width: 900px; /* Optional: Cap the maximum width */
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #1e1e1e;
-    border-radius: 10px; /* Rounded corners for island effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
 }
 
+.dark-mode header {
+    background: #1e1e1e; /* Dark header for dark mode */
+    color: #ffffff; /* White text */
+}
+
+.light-mode header {
+    background: #002b5c; /* Navy blue header for light mode */
+    color: #ffffff; /* White text */
+}
+
+/* Navigation Buttons */
 nav button {
     margin: 0 10px;
-    background: #292929;
-    color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 10px;
-    transition: transform 0.2s ease-out, background-color 0.3s ease;
+    transition: transform 0.2s ease-out, background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode nav button {
+    background: #292929; /* Dark gray for dark mode buttons */
+    color: #ffffff; /* White text */
+}
+
+.light-mode nav button {
+    background: #004080; /* Light navy for light mode buttons */
+    color: #ffffff; /* White text */
 }
 
 nav button:hover {
@@ -49,103 +66,85 @@ nav button:hover {
 }
 
 nav button.active {
-    background-color: #4CAF50;
-    color: #ffffff;
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    background-color: #ffbf00; /* Gold for active buttons */
+    color: #000000; /* Black text */
+    box-shadow: 0 0 10px rgba(255, 191, 0, 0.5); /* Glow effect */
 }
 
-/* Section */
+/* Section Styling */
 section {
     padding: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.content {
-    display: flex;
-    align-items: center;
+.dark-mode section {
+    background: #1e1e1e; /* Dark gray for dark mode sections */
+    color: #ffffff; /* White text */
+    border-color: #292929;
 }
 
-/* Images and text sliding directions based on section order */
-section:nth-child(odd) .content img {
-    transform: translateX(-100%); /* Images slide in from the left for odd sections */
-    opacity: 0;
-    transition: transform 1s ease, opacity 1s ease;
+.light-mode section {
+    background: #ffffff; /* White for light mode sections */
+    color: #000000; /* Black text */
+    border-color: #002b5c; /* Navy border for consistency */
 }
 
-section:nth-child(odd) .content div {
-    transform: translateX(100%); /* Text slides in from the right for odd sections */
-    opacity: 0;
-    transition: transform 1s ease, opacity 1s ease;
+section .content div {
+    padding: 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-section:nth-child(even) .content img {
-    transform: translateX(100%); /* Images slide in from the right for even sections */
-    opacity: 0;
-    transition: transform 1s ease, opacity 1s ease;
+.dark-mode section .content div {
+    background: #292929; /* Dark gray for content boxes */
+    color: #ffffff; /* White text */
+    border-color: #1e1e1e;
 }
 
-section:nth-child(even) .content div {
-    transform: translateX(-100%); /* Text slides in from the left for even sections */
-    opacity: 0;
-    transition: transform 1s ease, opacity 1s ease;
-}
-
-/* Restrict image size */
-section .content img {
-    max-width: 300px; /* Adjust width as necessary */
-    max-height: 200px; /* Adjust height as necessary */
-    width: auto; /* Maintain aspect ratio */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: rounded corners for aesthetics */
-    margin: 10px; /* Optional: spacing around the image */
-}
-
-section .content img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Ensure all items transition into view correctly */
-section.visible .content img,
-section.visible .content div {
-    transform: translateX(0);
-    opacity: 1;
+.light-mode section .content div {
+    background: #e6f7ff; /* Light blue for content boxes */
+    color: #000000; /* Black text */
+    border-color: #004080;
 }
 
 /* Footer */
 footer {
     padding: 20px;
     text-align: center;
-    background: #1e1e1e;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+.dark-mode footer {
+    background: #1e1e1e; /* Match dark mode header */
+    color: #ffffff; /* White text */
+}
+
+.light-mode footer {
+    background: #002b5c; /* Match light mode header */
+    color: #ffffff; /* White text */
+}
+
+/* Footer Links */
 .footer-links a {
     margin: 0 10px;
-    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
+.dark-mode .footer-links a {
+    color: #ffffff; /* White links for dark mode */
+}
+
+.light-mode .footer-links a {
+    color: #ffbf00; /* Gold links for light mode */
+}
+
 .footer-links a:hover {
     text-decoration: underline;
-    color: #4CAF50;
-}
-
-/* Border styling similar to the header */
-section .content div {
-    padding: 20px;
-    border: 2px solid #1e1e1e; /* Match header border */
-    border-radius: 10px; /* Rounded corners */
-    background: #292929; /* Match header background */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    max-width: 600px; /* Adjust for desired text width */
-}
-
-/* Border around images */
-section .content img {
-    border: 2px solid #1e1e1e; /* Match header border */
-    border-radius: 10px; /* Rounded corners */
+    color: #4CAF50; /* Green hover effect */
 }
