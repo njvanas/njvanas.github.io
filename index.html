@@ -16,10 +16,31 @@
                 <circle r="32" cy="40" cx="40"></circle>
             </svg>
         </div>
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect height="64" width="64" y="8" x="8"></rect>
+            </svg>
+        </div>
     </div>
 
     <main id="main-content">
-        <!-- Main page graphic -->
+        <!-- Header -->
+        <header>
+            <nav>
+                <button onclick="location.href='index.html'">Home</button>
+                <button onclick="location.href='about.html'">About Me</button>
+                <button onclick="location.href='projects.html'">Projects</button>
+                <button onclick="location.href='experience.html'">Experience</button>
+                <button onclick="location.href='contact.html'">Contact</button>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
         <section id="hero">
             <div class="hero-content">
                 <h1>Welcome to NJ's World</h1>
@@ -51,10 +72,31 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 NJ's World. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Check if the loader should display
+        const loader = document.getElementById('loader');
+        const mainContent = document.getElementById('main-content');
+
+        // Only display loader if not already shown today
+        const lastLoad = localStorage.getItem('lastLoadDate');
+        const today = new Date().toDateString();
+
+        if (lastLoad !== today) {
+            localStorage.setItem('lastLoadDate', today);
+            mainContent.style.display = 'none';
+            setTimeout(() => {
+                loader.style.display = 'none';
+                mainContent.style.display = 'block';
+            }, 8000); // 8-second delay
+        } else {
+            loader.style.display = 'none';
+            mainContent.style.display = 'block';
+        }
+    </script>
 </body>
 </html>

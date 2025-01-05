@@ -1,14 +1,43 @@
-// Show the loader initially and hide the main content
+// Get references to the loader and main content
 const loader = document.getElementById('loader');
 const mainContent = document.getElementById('main-content');
 
-mainContent.style.display = 'none'; // Hide the main content initially
+// Check if the loader should display
+const lastLoad = localStorage.getItem('lastLoadDate');
+const today = new Date().toDateString();
 
-// Hide the loader and display the main content after 8 seconds
-setTimeout(() => {
+if (lastLoad !== today) {
+    // If the loader hasn't been shown today, set today's date and show loader
+    localStorage.setItem('lastLoadDate', today);
+    mainContent.style.display = 'none';
+    setTimeout(() => {
+        loader.style.display = 'none';
+        mainContent.style.display = 'block';
+    }, 8000); // 8-second delay
+} else {
+    // If the loader has been shown today, skip the loader
     loader.style.display = 'none';
-    mainContent.style.display = 'block'; // Show the main content
-}, 8000);
+    mainContent.style.display = 'block';
+}
+
+// Smooth scrolling to sections when buttons are clicked
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+// Toggle dark mode for the website
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('light-mode');
+}
+
+// Highlight the active navigation button
+document.querySelectorAll('nav button').forEach((button) => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll('nav button').forEach((btn) => btn.classList.remove('active'));
+        button.classList.add('active');
+    });
+});
 
 // Track the last scroll position to determine scroll direction
 let lastScrollPosition = 0;
@@ -32,23 +61,4 @@ document.addEventListener('scroll', () => {
 
     // Update the last scroll position
     lastScrollPosition = currentScrollPosition;
-});
-
-// Smooth scrolling to sections when buttons are clicked
-function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-}
-
-// Toggle dark mode for the website
-function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    document.body.classList.toggle('light-mode');
-}
-
-// Highlight the active navigation button
-document.querySelectorAll('nav button').forEach((button) => {
-    button.addEventListener('click', () => {
-        document.querySelectorAll('nav button').forEach((btn) => btn.classList.remove('active'));
-        button.classList.add('active');
-    });
 });
