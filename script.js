@@ -4,24 +4,21 @@ let lastScrollPosition = 0;
 document.addEventListener('scroll', () => {
     const currentScrollPosition = window.scrollY;
 
+    // Check each section for visibility
     document.querySelectorAll('section').forEach((section) => {
         const rect = section.getBoundingClientRect();
-        const isScrollingDown = currentScrollPosition > lastScrollPosition;
+        const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
 
-        if (isScrollingDown) {
-            // Add 'visible' class when scrolling down if section is in the viewport
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
-                section.classList.add('visible');
-            }
+        if (isInViewport) {
+            // Add 'visible' class when the section is in the viewport
+            section.classList.add('visible');
         } else {
-            // Remove 'visible' class when scrolling up if section is out of the viewport
-            if (rect.top > window.innerHeight || rect.bottom < 0) {
-                section.classList.remove('visible');
-            }
+            // Remove 'visible' class when the section is out of the viewport
+            section.classList.remove('visible');
         }
     });
 
-    // Update last scroll position
+    // Update the last scroll position
     lastScrollPosition = currentScrollPosition;
 });
 
