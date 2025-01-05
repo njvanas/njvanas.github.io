@@ -86,6 +86,7 @@ header.hover-header {
     display: inline-block;
     width: 50px;
     height: 25px;
+    margin-left: 15px;
 }
 
 .dark-mode-toggle input {

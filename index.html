@@ -8,24 +8,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hover-header">
+    <header class="hover-header" style="z-index: 1000; padding: 10px 0;">
         <div class="header-content">
             <nav>
                 <button class="nav-button" onclick="window.location.href='#about'">About Me</button>
                 <button class="nav-button" onclick="window.location.href='#experience'">My Experience</button>
                 <button class="nav-button" onclick="window.location.href='#projects'">My Projects</button>
                 <button class="nav-button" onclick="window.location.href='#contact'">Contact Me</button>
+                <div class="dark-mode-toggle" style="margin-left: 15px;">
+                    <input type="checkbox" id="darkModeCheckbox" />
+                    <label for="darkModeCheckbox">
+                        <span class="toggle"></span>
+                    </label>
+                </div>
             </nav>
-            <div class="dark-mode-toggle">
-                <input type="checkbox" id="darkModeCheckbox" />
-                <label for="darkModeCheckbox">
-                    <span class="toggle"></span>
-                </label>
-            </div>
         </div>
     </header>
 
-    <section id="hero">
+    <section id="hero" style="padding-top: 80px;">
         <div class="hero-content">
             <h1>Hi, I'm Dolfie!</h1>
             <h2>Experienced IT Professional | Gamer | Innovator</h2>
@@ -71,7 +71,7 @@
         <div class="social-media">
             <p>Follow me:</p>
             <ul>
-                <li><a href="https://twitter.com/YourHandle" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com/YourHandle" target="_blank">LinkedIN</a></li>
                 <li><a href="mailto:youremail@example.com">Email</a></li>
                 <li><a href="https://github.com/YourGitHub" target="_blank">GitHub</a></li>
             </ul>
