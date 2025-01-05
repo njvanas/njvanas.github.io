@@ -133,3 +133,19 @@ footer {
     text-decoration: underline;
     color: #4CAF50;
 }
+
+/* Border styling similar to the header */
+section .content div {
+    padding: 20px;
+    border: 2px solid #1e1e1e; /* Match header border */
+    border-radius: 10px; /* Rounded corners */
+    background: #292929; /* Match header background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    max-width: 600px; /* Adjust for desired text width */
+}
+
+/* Border around images */
+section .content img {
+    border: 2px solid #1e1e1e; /* Match header border */
+    border-radius: 10px; /* Rounded corners */
+}
