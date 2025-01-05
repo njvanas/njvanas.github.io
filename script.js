@@ -1,3 +1,15 @@
+// Ensure the loader displays for 10 seconds and then shows the rest of the site
+window.addEventListener('load', () => {
+    // Add 'loading' class to body to show only the pre-loader
+    document.body.classList.add('loading');
+
+    setTimeout(() => {
+        // After 10 seconds, remove 'loading' class and add 'loaded'
+        document.body.classList.remove('loading');
+        document.body.classList.add('loaded');
+    }, 10000); // Delay for 10 seconds
+});
+
 // Track the last scroll position to determine scroll direction
 let lastScrollPosition = 0;
 
@@ -39,12 +51,4 @@ document.querySelectorAll('nav button').forEach((button) => {
         document.querySelectorAll('nav button').forEach((btn) => btn.classList.remove('active'));
         button.classList.add('active');
     });
-});
-
-// Handle the pre-loader and show main content after 5 seconds
-window.addEventListener('load', () => {
-    setTimeout(() => {
-        document.getElementById('preloader').style.display = 'none';
-        document.getElementById('main-content').style.display = 'block';
-    }, 5000); // Delay for 5 seconds
 });
