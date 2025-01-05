@@ -7,16 +7,6 @@ window.addEventListener('load', () => {
         // After 10 seconds, remove 'loading' class and add 'loaded'
         document.body.classList.remove('loading');
         document.body.classList.add('loaded');
-
-        // Trigger visibility for all sections after pre-loader
-        document.querySelectorAll('section').forEach((section) => {
-            const rect = section.getBoundingClientRect();
-            const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
-
-            if (isInViewport) {
-                section.classList.add('visible');
-            }
-        });
     }, 10000); // Delay for 10 seconds
 });
 

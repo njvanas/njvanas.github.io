@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -21,17 +20,17 @@ body {
 header {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; /* Ensures it's above other elements */
     margin: 0 auto;
-    width: 80%;
-    max-width: 900px;
+    width: 80%; /* Adjust this value for desired width */
+    max-width: 900px; /* Optional: Cap the maximum width */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* Rounded corners for island effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 nav button {
@@ -68,52 +67,52 @@ section {
     align-items: center;
 }
 
-/* Images and text sliding directions */
+/* Images and text sliding directions based on section order */
 section:nth-child(odd) .content img {
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Images slide in from the left for odd sections */
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
 }
 
 section:nth-child(odd) .content div {
-    transform: translateX(100%);
+    transform: translateX(100%); /* Text slides in from the right for odd sections */
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
 }
 
 section:nth-child(even) .content img {
-    transform: translateX(100%);
+    transform: translateX(100%); /* Images slide in from the right for even sections */
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
 }
 
 section:nth-child(even) .content div {
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Text slides in from the left for even sections */
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
 }
 
-/* Ensure items transition into view */
-section.visible .content img,
-section.visible .content div {
-    transform: translateX(0);
-    opacity: 1;
-}
-
 /* Restrict image size */
 section .content img {
-    max-width: 300px;
-    max-height: 200px;
-    width: auto;
-    height: auto;
-    border-radius: 10px;
-    margin: 10px;
+    max-width: 300px; /* Adjust width as necessary */
+    max-height: 200px; /* Adjust height as necessary */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners for aesthetics */
+    margin: 10px; /* Optional: spacing around the image */
 }
 
 section .content img:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ensure all items transition into view correctly */
+section.visible .content img,
+section.visible .content div {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 /* Footer */
@@ -135,44 +134,20 @@ footer {
     color: #4CAF50;
 }
 
-/* Pre-loader Styles */
-body.loading #main-content,
-body.loading header,
-body.loading footer {
-    display: none;
-}
-
-body.loading #preloader {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: #121212;
-}
-
-body.loaded #preloader {
-    display: none;
-}
-
-body.loaded #main-content,
-body.loaded header,
-body.loaded footer {
-    display: block;
-}
-
-/* Border and Content Styling */
+/* Border styling similar to the header */
 section .content div {
     padding: 20px;
-    border: 2px solid #1e1e1e;
-    border-radius: 10px;
-    background: #292929;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    max-width: 600px;
+    border: 2px solid #1e1e1e; /* Match header border */
+    border-radius: 10px; /* Rounded corners */
+    background: #292929; /* Match header background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    max-width: 600px; /* Adjust for desired text width */
 }
 
+/* Border around images */
 section .content img {
-    border: 2px solid #1e1e1e;
-    border-radius: 10px;
+    border: 2px solid #1e1e1e; /* Match header border */
+    border-radius: 10px; /* Rounded corners */
 }
 
 #main-content {
