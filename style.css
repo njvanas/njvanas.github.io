@@ -48,7 +48,8 @@ header {
 }
 
 #darkModeToggle {
-    padding: 5px 10px;
+    margin-left: auto;
+    padding: 5px 15px;
     border: none;
     background: linear-gradient(to right, #007BFF, #6A5ACD);
     color: #FFF;
@@ -103,5 +104,3 @@ header {
 .cta-buttons button:hover {
     background: linear-gradient(to right, #6A5ACD, #007BFF);
 }
-
-/* Additional sections styling omitted for brevity, but updated fully */
