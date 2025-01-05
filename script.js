@@ -40,3 +40,11 @@ document.querySelectorAll('nav button').forEach((button) => {
         button.classList.add('active');
     });
 });
+
+// Handle the pre-loader and show main content after 5 seconds
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.getElementById('preloader').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+    }, 5000); // Delay for 5 seconds
+});
