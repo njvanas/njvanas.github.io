@@ -3,80 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovating IT Solutions</title>
+    <title>GitHub Bio - Dolfie</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="hover-header" style="z-index: 1000; padding: 10px 0;">
-        <div class="header-content">
+<body class="dark-mode">
+    <header>
+        <div class="header-container">
+            <h1>Dolfie's Bio</h1>
             <nav>
-                <button class="nav-button" onclick="window.location.href='#about'">About Me</button>
-                <button class="nav-button" onclick="window.location.href='#experience'">My Experience</button>
-                <button class="nav-button" onclick="window.location.href='#projects'">My Projects</button>
-                <button class="nav-button" onclick="window.location.href='#contact'">Contact Me</button>
-                <div class="dark-mode-toggle" style="margin-left: 15px;">
-                    <input type="checkbox" id="darkModeCheckbox" />
-                    <label for="darkModeCheckbox">
-                        <span class="toggle"></span>
-                    </label>
-                </div>
+                <button onclick="scrollToSection('about')">About Me</button>
+                <button onclick="scrollToSection('experience')">My Experience</button>
+                <button onclick="scrollToSection('projects')">My Projects</button>
+                <button onclick="scrollToSection('contact')">Contact Me</button>
+                <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
             </nav>
         </div>
     </header>
 
-    <section id="hero" style="padding-top: 80px;">
-        <div class="hero-content">
-            <h1>Hi, I'm Dolfie!</h1>
-            <h2>Experienced IT Professional | Gamer | Innovator</h2>
-            <p>Innovating IT solutions, one system at a time.</p>
-            <div class="cta-buttons">
-                <button onclick="window.location.href='resume.pdf'">Download Resume</button>
-                <button onclick="window.location.href='#contact'">Contact Me</button>
+    <section id="about">
+        <div class="content">
+            <img src="images/about.jpg" alt="About Me">
+            <div>
+                <h2>About Me</h2>
+                <p>Hello! I am Dolfie, a passionate developer with a love for open-source projects.</p>
             </div>
         </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <!-- About section content -->
-    </section>
-
     <section id="experience">
-        <h2>My Experience</h2>
-        <!-- Experience content -->
+        <div class="content">
+            <img src="images/experience.jpg" alt="My Experience">
+            <div>
+                <h2>My Experience</h2>
+                <p>With years of experience in web development, I specialize in creating stunning websites.</p>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
-        <h2>My Projects</h2>
-        <!-- Projects content -->
+        <div class="content">
+            <img src="images/project1.jpg" alt="Projects">
+            <div>
+                <h2>My Projects</h2>
+                <p>Check out my GitHub repository for amazing projects like this!</p>
+            </div>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <!-- Contact form -->
+        <div class="content">
+            <img src="images/contact.jpg" alt="Contact Me">
+            <div>
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out to me at dolfie@example.com.</p>
+            </div>
+        </div>
     </section>
 
-    <script>
-        const darkModeCheckbox = document.getElementById('darkModeCheckbox');
-        darkModeCheckbox.addEventListener('change', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
-
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2025 Dolfie. All rights reserved.</p>
-        <a href="#" class="support-link">Support Me</a>
-        <div class="social-media">
-            <p>Follow me:</p>
-            <ul>
-                <li><a href="https://linkedin.com/YourHandle" target="_blank">LinkedIN</a></li>
-                <li><a href="mailto:youremail@example.com">Email</a></li>
-                <li><a href="https://github.com/YourGitHub" target="_blank">GitHub</a></li>
-            </ul>
+    <footer>
+        <p>© 2025 Dolfie. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Support Me</a>
+            <a href="https://linkedin.com/in/dolfie" target="_blank">LinkedIn</a>
+            <a href="mailto:dolfie@example.com">Email</a>
+            <a href="https://github.com/dolfie" target="_blank">GitHub</a>
         </div>
-    </div>
-</footer>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
