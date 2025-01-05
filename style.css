@@ -1,4 +1,3 @@
-
 /* General styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -6,58 +5,57 @@ body {
     padding: 0;
     background-color: #F8F9FA;
     color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
-/* Centered and scrolling design for sections */
-section {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Header */
 header.hover-header {
     position: fixed;
-    top: 0;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
-    max-width: 800px;
     background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: fit-content;
 }
 
-/* Buttons */
-.nav-button {
-    background: linear-gradient(to right, #007BFF, #6A5ACD);
-    color: #FFF;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background 0.3s ease;
+header.hover-header h1 {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 
-.nav-button:hover {
-    background: linear-gradient(to right, #6A5ACD, #007BFF);
+header.hover-header .minimal-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-/* Dark mode styles */
+header.hover-header .minimal-link:hover {
+    color: #6A5ACD;
+}
+
 .dark-mode {
     background-color: #343A40;
     color: #FFF;
+}
+
+.dark-mode .hover-header {
+    background-color: rgba(35, 39, 42, 0.9);
+}
+
+.dark-mode .minimal-link {
+    color: #6A5ACD;
+}
+
+.dark-mode .minimal-link:hover {
+    color: #007BFF;
 }
