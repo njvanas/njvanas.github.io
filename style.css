@@ -5,11 +5,54 @@ body {
     padding: 0;
     background-color: #F8F9FA;
     color: #333;
+    line-height: 1.6;
 }
 
+h2 {
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
 header.hover-header {
     position: fixed;
-    top: 20px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.9);
@@ -23,39 +66,88 @@ header.hover-header {
     width: fit-content;
 }
 
-header.hover-header h1 {
-    font-size: 1.5em;
-    margin: 0;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    color: #333;
+.nav-button {
+    background: linear-gradient(to right, #007BFF, #6A5ACD);
+    color: #FFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-header.hover-header .minimal-link {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: 500;
-    transition: color 0.3s ease;
+.nav-button:hover {
+    background: linear-gradient(to right, #6A5ACD, #007BFF);
 }
 
-header.hover-header .minimal-link:hover {
-    color: #6A5ACD;
+.dark-mode-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
 }
 
+.dark-mode-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.dark-mode-toggle label {
+    background-color: #CCC;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    position: relative;
+    width: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle label .toggle {
+    background-color: white;
+    border-radius: 50%;
+    content: "";
+    height: 19px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    transition: transform 0.3s ease;
+    width: 19px;
+}
+
+.dark-mode-toggle input:checked + label {
+    background-color: #6A5ACD;
+}
+
+.dark-mode-toggle input:checked + label .toggle {
+    transform: translateX(25px);
+}
+
+/* Dark mode styles */
 .dark-mode {
     background-color: #343A40;
     color: #FFF;
+}
+
+.dark-mode section {
+    background-color: #444;
+    color: #FFF;
+}
+
+.dark-mode a {
+    color: #6A5ACD;
 }
 
 .dark-mode .hover-header {
     background-color: rgba(35, 39, 42, 0.9);
 }
 
-.dark-mode .minimal-link {
-    color: #6A5ACD;
+.dark-mode .nav-button {
+    background: linear-gradient(to right, #6A5ACD, #007BFF);
 }
 
-.dark-mode .minimal-link:hover {
-    color: #007BFF;
+.dark-mode .dark-mode-toggle label {
+    background-color: #007BFF;
 }

@@ -3,58 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovating IT Solutions</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="hover-header">
         <div class="header-content">
-            <h1><b>My Portfolio</b></h1>
-            <!-- Optional links for minimalistic navigation -->
-            <!-- <nav>
-                <a href="#about" class="minimal-link">About Me</a>
-                <a href="#projects" class="minimal-link">Projects</a>
-                <a href="#contact" class="minimal-link">Contact</a>
-            </nav> -->
+            <nav>
+                <button class="nav-button" onclick="window.location.href='#introduction'">Introduction</button>
+                <button class="nav-button" onclick="window.location.href='#experience'">Experience</button>
+                <button class="nav-button" onclick="window.location.href='#projects'">Projects</button>
+                <button class="nav-button" onclick="window.location.href='#support'">Support</button>
+            </nav>
+            <div class="dark-mode-toggle">
+                <input type="checkbox" id="darkModeCheckbox" />
+                <label for="darkModeCheckbox">
+                    <span class="toggle"></span>
+                </label>
+            </div>
         </div>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Dolfie!</h1>
-            <h2>Experienced IT Professional | Gamer | Innovator</h2>
-            <p>Innovating IT solutions, one system at a time.</p>
-            <div class="cta-buttons">
-                <button onclick="window.location.href='resume.pdf'">Download Resume</button>
-                <button onclick="window.location.href='#contact'">Contact Me</button>
-            </div>
-        </div>
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>I am a developer passionate about technology and design.</p>
     </section>
 
-    <section id="about">
-        <h2>Who I Am</h2>
-        <!-- About section content -->
-    </section>
-
-    <section id="work">
-        <h2>My Expertise</h2>
-        <!-- Work experience content -->
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <!-- Skills content -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Worked on multiple projects in [Field/Industry].</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <!-- Projects content -->
+        <ul>
+            <li><a href="#">Project Alpha</a></li>
+            <li><a href="#">GitHub Repository Link</a></li>
+        </ul>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <!-- Contact form -->
+    <section id="support">
+        <h2>Support</h2>
+        <p>Support my work by contributing <a href="#">here</a>.</p>
     </section>
 
     <script>
