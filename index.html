@@ -72,31 +72,14 @@
         </section>
     </main>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="scrollToTop()">↑</button>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 NJ's World. All rights reserved.</p>
     </footer>
 
-    <script>
-        // Check if the loader should display
-        const loader = document.getElementById('loader');
-        const mainContent = document.getElementById('main-content');
-
-        // Only display loader if not already shown today
-        const lastLoad = localStorage.getItem('lastLoadDate');
-        const today = new Date().toDateString();
-
-        if (lastLoad !== today) {
-            localStorage.setItem('lastLoadDate', today);
-            mainContent.style.display = 'none';
-            setTimeout(() => {
-                loader.style.display = 'none';
-                mainContent.style.display = 'block';
-            }, 8000); // 8-second delay
-        } else {
-            loader.style.display = 'none';
-            mainContent.style.display = 'block';
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

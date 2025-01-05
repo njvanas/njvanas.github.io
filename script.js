@@ -62,3 +62,18 @@ document.addEventListener('scroll', () => {
     // Update the last scroll position
     lastScrollPosition = currentScrollPosition;
 });
+
+// Back to Top Button Functionality
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+        backToTopButton.classList.add('visible');
+    } else {
+        backToTopButton.classList.remove('visible');
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
