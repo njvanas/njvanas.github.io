@@ -23,7 +23,7 @@ The purpose of this website is to:
 4. **Experience**
    - Provides insights into my professional background and achievements.
 
-5. **Contact**
+5. **Contact Me**
    - A section dedicated to facilitating communication, including options to connect with me directly.
 
 ## Technologies Used
