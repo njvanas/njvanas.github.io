@@ -35,7 +35,7 @@ This website is developed using the following technologies:
 
 ## How to View the Website
 
-The website is hosted using GitHub Pages. To view the live version, visit: **[https://<your-username>.github.io/<repository-name>](https://<your-username>.github.io/<repository-name>)**
+The website is hosted using GitHub Pages. To view the live version, visit: **[https://njvanas.github.io](https://njvanas.github.io)**
 
 Replace `<your-username>` and `<repository-name>` with your GitHub username and repository name.
 
