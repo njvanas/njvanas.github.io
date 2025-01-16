@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserCircle2, Briefcase, FolderKanban, Mail, Code, Rocket, Award, Terminal, Brain, Coffee } from 'lucide-react';
+import { UserCircle2, Briefcase, FolderKanban, Mail, Code, Rocket, Award, Terminal, Brain, Coffee, ShieldCheck, Server, Briefcase, Headphones } from 'lucide-react';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
@@ -189,27 +189,27 @@ function App() {
                   </h3>
                   <div className="grid gap-4">
                     <QuickCard
-                      icon={<Terminal className="w-6 h-6" />}
-                      title="User Authentication Specialist"
-                      description="Streamlined enterprise authentication systems by implementing SSO, MFA, and RBAC, ensuring compliance with GDPR and ISO 27001 standards."
+                      icon={<ShieldCheck className="w-6 h-6" />}
+                      title="User Authentication and Authorization Specialist"
+                      description="Enhanced security systems and ensured compliance"
                       href="#/experience"
                     />
                     <QuickCard
-                      icon={<Coffee className="w-6 h-6" />}
-                      title="IT Infrastructure Manager"
-                      description="Oversaw hybrid IT environments, managing Azure AD, Office 365, and Hyper-V, while optimizing workflows for better efficiency."
+                      icon={<Headphones className="w-6 h-6" />}
+                      title="IT Servicedesk Medewerker"
+                      description="Managed Azure tenants and improved IT workflows"
                       href="#/experience"
                     />
 					<QuickCard
-                      icon={<Coffee className="w-6 h-6" />}
-                      title="Systems Administrator"
-                      description="Managed network servers, automated DevOps deployments, and enhanced system reliability with robust backup solutions."
+                      icon={<Briefcase className="w-6 h-6" />}
+                      title="IT Coordinator/Manager"
+                      description="Oversaw IT operations"
                       href="#/experience"
                     />
 					<QuickCard
-                      icon={<Coffee className="w-6 h-6" />}
-                      title="IT Coordinator"
-                      description="Led IT teams to improve operational processes, including user onboarding workflows and inventory management."
+                      icon={<Server className="w-6 h-6" />}
+                      title="Systems Administrator/IT Specialist"
+                      description="Managed servers and automated deployments"
                       href="#/experience"
                     />
                   </div>
