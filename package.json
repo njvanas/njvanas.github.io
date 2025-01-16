@@ -1,5 +1,6 @@
 {
-  "name": "njvanas.github.io",
+  "homepage": "https://njvanas.github.io"
+  "name": "njvanas-portfolio",
   "version": "1.0.0",
   "private": true,
   "scripts": {
