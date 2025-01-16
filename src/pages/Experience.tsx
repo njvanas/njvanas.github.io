@@ -52,55 +52,43 @@ function ExperienceCard({
 
 function Experience() {
   const experiences = [
-  {
-    company: "Quion Groep",
-    position: "User Authentication and Authorization Specialist",
-    period: "June 2024 - Present",
-    location: "Rotterdam, Netherlands",
-    description: "Implemented and managed secure authentication systems while ensuring regulatory compliance.",
-    achievements: [
-      "Designed and deployed SSO and MFA solutions, improving user authentication security.",
-      "Automated user provisioning and deprovisioning processes, reducing manual workload by 50%.",
-      "Enhanced compliance with GDPR, ISO 27001, and SOC2 through improved workflows."
-    ]
-  },
-  {
-    company: "Blauwtrust Groep",
-    position: "IT Servicedesk Medewerker",
-    period: "September 2023 - May 2024",
-    location: "Rotterdam, Netherlands",
-    description: "Provided IT support and managed Azure tenant configurations.",
-    achievements: [
-      "Streamlined onboarding and offboarding processes, improving efficiency by 30%.",
-      "Implemented Intune policies for secure device management.",
-      "Optimized IT workflows, ensuring alignment with ISO and ISAE standards."
-    ]
-  },
-  {
-    company: "Unique Hydra & Gist",
-    position: "IT Coordinator/Manager",
-    period: "October 2021 - August 2023",
-    location: "Epping/Bellville, South Africa",
-    description: "Managed IT operations, budgets, and hybrid IT environments.",
-    achievements: [
-      "Revised user creation workflows, reducing ticket resolution times by 40%.",
-      "Introduced automated approval systems for faster decision-making.",
-      "Effectively managed IT budgets, achieving cost savings across hardware procurement."
-    ]
-  },
-  {
-    company: "DiPAR Systems",
-    position: "Systems Administrator/IT Specialist",
-    period: "January 2018 - September 2021",
-    location: "Tyger Valley, South Africa",
-    description: "Oversaw network servers, deployments, and IT environments.",
-    achievements: [
-      "Implemented backup solutions, ensuring 99.9% system uptime.",
-      "Upgraded on-premise systems to hybrid Office 365 environments.",
-      "Automated SQL Server database management, reducing manual intervention by 60%."
-    ]
-  }
-];
+    {
+      company: "Innovation Corp",
+      position: "Senior Software Engineer",
+      period: "2020 - Present",
+      location: "San Francisco, CA",
+      description: "Leading the development of cloud-native applications and mentoring junior developers.",
+      achievements: [
+        "Led the migration of legacy systems to microservices architecture, reducing deployment time by 70%",
+        "Implemented CI/CD pipelines that reduced deployment errors by 85%",
+        "Mentored 5 junior developers who were promoted to mid-level positions"
+      ]
+    },
+    {
+      company: "TechStart Solutions",
+      position: "Full Stack Developer",
+      period: "2018 - 2020",
+      location: "San Francisco, CA",
+      description: "Developed and maintained multiple client projects using modern web technologies.",
+      achievements: [
+        "Built and launched 3 major client projects with 99.9% uptime",
+        "Reduced application load time by 60% through optimization",
+        "Implemented automated testing that caught 95% of bugs before production"
+      ]
+    },
+    {
+      company: "DevTools SaaS",
+      position: "Founder & Lead Developer",
+      period: "2016 - 2018",
+      location: "Remote",
+      description: "Founded and developed a SaaS platform for developer productivity tools.",
+      achievements: [
+        "Grew user base to 10,000+ active developers",
+        "Achieved $500K ARR within first year",
+        "Featured in multiple tech publications for innovative approach"
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">

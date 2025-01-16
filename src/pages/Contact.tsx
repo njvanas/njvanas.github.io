@@ -51,26 +51,26 @@ function Contact() {
           <ContactCard
             icon={<Linkedin className="w-6 h-6" />}
             title="LinkedIn"
-            value="nj.vanas"
-            link="https://linkedin.com/in/njvanas"
+            value="john.doe"
+            link="https://linkedin.com/in/john-doe"
           />
           <ContactCard
             icon={<MessageSquare className="w-6 h-6" />}
             title="Discord"
-            value="dolfie_die_wolfie"
-            link="https://discord.com/users/dolfie_die_wolfie"
+            value="johndoe#1234"
+            link="https://discord.com/users/johndoe"
           />
           <ContactCard
             icon={<Phone className="w-6 h-6" />}
             title="WhatsApp"
-            value="+31 (647) 028 146"
-            link="https://wa.me/31647028146"
+            value="+1 (555) 123-4567"
+            link="https://wa.me/15551234567"
           />
           <ContactCard
             icon={<Mail className="w-6 h-6" />}
             title="Email"
-            value="njvanas@duck.com"
-            link="mailto:njvanas@duck.com"
+            value="john.doe@example.com"
+            link="mailto:john.doe@example.com"
           />
         </div>
 
