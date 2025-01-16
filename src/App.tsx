@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserCircle2, Briefcase, FolderKanban, Mail, Code, Rocket, Award, Terminal, Brain, Coffee } from 'lucide-react';
+import { UserCircle2, Briefcase, FolderKanban, Mail, Code, Rocket, Award, Terminal, Brain, Coffee, ShieldCheck, Headphones, Server } from 'lucide-react';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
@@ -179,15 +179,27 @@ function App() {
                   </h3>
                   <div className="grid gap-4">
                     <QuickCard
-                      icon={<Terminal className="w-6 h-6" />}
-                      title="Senior Developer"
-                      description="Tech Lead at Innovation Corp"
+                      icon={<ShieldCheck className="w-6 h-6" />}
+                      title="Authentication Specialist"
+                      description="Ensured secure SSO and MFA systems at Quion Groep"
                       href="#/experience"
                     />
                     <QuickCard
-                      icon={<Coffee className="w-6 h-6" />}
-                      title="Startup Founder"
-                      description="Built and scaled DevTools SaaS"
+                      icon={<Headphones className="w-6 h-6" />}
+                      title="IT Servicedesk Medewerker"
+                      description="Managed Azure policies and enhanced workflows"
+                      href="#/experience"
+                    />
+                    <QuickCard
+                      icon={<Briefcase className="w-6 h-6" />}
+                      title="IT Coordinator/Manager"
+                      description="Oversaw IT operations at Unique Hydra & Gist"
+                      href="#/experience"
+                    />
+                    <QuickCard
+                      icon={<Server className="w-6 h-6" />}
+                      title="Systems Administrator"
+                      description="Managed server environments at DiPAR Systems"
                       href="#/experience"
                     />
                   </div>
