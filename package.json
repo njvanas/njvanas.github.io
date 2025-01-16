@@ -1,5 +1,5 @@
 {
-  "name": "test-site",
+  "name": "njvanas.github.io",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -22,6 +22,6 @@
 	"gh-pages": "^5.0.0"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dolfie",
   "license": "MIT"
 }
