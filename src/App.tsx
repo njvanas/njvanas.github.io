@@ -106,12 +106,15 @@ function App() {
           <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="text-center mb-16">
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-6">
-                Full-Stack Developer & Tech Enthusiast
+                Cybersecurity and IT Infrastructure Specialist
+				Identity & Access Management Expert
               </h1>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Passionate about creating elegant solutions to complex problems. 
-                Specializing in modern web technologies with 5 years of experience 
-                building scalable applications.
+                Driven IT professional with over 8 years of experience in managing
+				complex IT infrastructures and enhancing security protocols.
+				Specializing in identity and access management, hybrid cloud environments,
+				and workflow optimization, I am passionate about delivering secure, scalable,
+				and efficient solutions to meet evolving business needs.
               </p>
             </div>
 
