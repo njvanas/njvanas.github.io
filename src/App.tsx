@@ -91,7 +91,7 @@ function App() {
           <nav className="bg-gray-800/50 backdrop-blur-sm border-b border-gray-700">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
               <div className="flex justify-between items-center">
-                <span className="text-xl font-semibold text-gray-100">John Doe</span>
+                <span className="text-xl font-semibold text-gray-100">NJ van As</span>
                 <div className="hidden sm:flex space-x-6">
                   <NavLink href="#/about">About</NavLink>
                   <NavLink href="#/projects">Projects</NavLink>
@@ -106,12 +106,10 @@ function App() {
           <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="text-center mb-16">
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-6">
-                Full-Stack Developer & Tech Enthusiast
+                IT Specialist & Access Management Professional
               </h1>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Passionate about creating elegant solutions to complex problems. 
-                Specializing in modern web technologies with 5 years of experience 
-                building scalable applications.
+                Highly skilled IT professional with expertise in system administration, user authentication, and infrastructure optimization.
               </p>
             </div>
 
@@ -158,14 +156,26 @@ function App() {
                   <div className="grid gap-4">
                     <QuickCard
                       icon={<Rocket className="w-6 h-6" />}
-                      title="E-Commerce Platform"
-                      description="Built with Next.js and Stripe"
+                      title="Authentication Protocol Integration"
+                      description="Designed and deployed enterprise-level SSO and MFA solutions for enhanced security and user experience."
                       href="#/projects"
                     />
                     <QuickCard
                       icon={<Brain className="w-6 h-6" />}
-                      title="AI Chat Application"
-                      description="Real-time NLP processing system"
+                      title="IT Workflow Automation"
+                      description="Optimized identity lifecycle processes by automating user provisioning, access reviews, and deprovisioning."
+                      href="#/projects"
+                    />
+					<QuickCard
+                      icon={<Brain className="w-6 h-6" />}
+                      title="Hybrid Cloud Implementation"
+                      description="Migrated legacy systems to Azure AD and implemented hybrid IT environments for scalability and performance."
+                      href="#/projects"
+                    />
+					<QuickCard
+                      icon={<Brain className="w-6 h-6" />}
+                      title="Compliance Enhancement"
+                      description="Integrated ISO 27001 and SOC2 controls into IT systems, ensuring regulatory compliance and robust security."
                       href="#/projects"
                     />
                   </div>
@@ -179,7 +189,6 @@ function App() {
                   </h3>
                   <div className="grid gap-4">
                     <QuickCard
-<<<<<<< HEAD
                       icon={<ShieldCheck className="w-6 h-6" />}
                       title="User Authentication and Authorization Specialist"
                       description="Enhanced security systems and ensured compliance"
@@ -201,17 +210,6 @@ function App() {
                       icon={<Server className="w-6 h-6" />}
                       title="Systems Administrator/IT Specialist"
                       description="Managed servers and automated deployments"
-=======
-                      icon={<Terminal className="w-6 h-6" />}
-                      title="Senior Developer"
-                      description="Tech Lead at Innovation Corp"
-                      href="#/experience"
-                    />
-                    <QuickCard
-                      icon={<Coffee className="w-6 h-6" />}
-                      title="Startup Founder"
-                      description="Built and scaled DevTools SaaS"
->>>>>>> parent of 14988dc (content update)
                       href="#/experience"
                     />
                   </div>
