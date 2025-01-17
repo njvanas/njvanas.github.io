@@ -22,11 +22,11 @@ function About() {
           <div className="flex items-center justify-center space-x-4 text-gray-300 mb-8">
             <span className="flex items-center">
               <MapPin className="w-4 h-4 mr-2" />
-              San Francisco, CA
+              Rotterdam, Netherlands
             </span>
             <span className="flex items-center">
               <Briefcase className="w-4 h-4 mr-2" />
-              Senior Software Engineer
+              User Authentication & Authorization Specialist
             </span>
           </div>
         </div>
@@ -36,13 +36,13 @@ function About() {
           <h2 className="text-2xl font-semibold text-gray-100 mb-6">My Story</h2>
           <div className="space-y-4 text-gray-300">
             <p>
-              Born and raised in the heart of Silicon Valley, I've always been fascinated by the intersection of technology and human experience. My journey in software engineering began during my high school years when I built my first website for our school's robotics club.
+              Growing up in the agricultural hub of Grabouw, South Africa, I've always been fascinated by the intersection of technology and human experience, inspired by how innovation can drive progress and efficiency in industries like agriculture that are vital to my hometown. My journey in IT began at the age of 10 when I was first introduced to networking and computer hardware. From then on, I frequently dabbled in building and repairing computers, solving software issues, networking and exploring penetration testing.
             </p>
             <p>
-              After graduating from Stanford University with a degree in Computer Science, I joined a fast-growing startup where I discovered my passion for building scalable applications that impact millions of users. Over the years, I've evolved from a full-stack developer to a technical leader, mentoring teams and architecting complex systems.
+              Key milestones in my journey include obtaining my first full-time position at the college where I studied, just six months into my course. From there, I quickly advanced to become a systems admin, taking on significant responsibilities and opportunities for growth. I eventually achieved the IT coordinator/manager role at a young age and later made the significant move overseas, where I restarted my career and began focusing on user authentication and authorization.
             </p>
             <p>
-              Today, I specialize in cloud-native architectures and distributed systems, focusing on creating robust and efficient solutions that drive business growth while maintaining high performance and reliability.
+              Exploring front-end web development and delving into security aspects related to access management. Pursuing new interests in AI and exploring what AI can do for the tech industry.
             </p>
           </div>
         </div>
@@ -54,15 +54,15 @@ function About() {
             <div className="flex items-start space-x-4">
               <Code className="w-6 h-6 text-blue-400 flex-shrink-0" />
               <div>
-                <h3 className="text-lg font-semibold text-gray-200 mb-2">Software Architecture</h3>
-                <p className="text-gray-300">Designing and implementing scalable, cloud-native solutions using modern technologies and best practices.</p>
+                <h3 className="text-lg font-semibold text-gray-200 mb-2">User Authentication & Authorization Specialist</h3>
+                <p className="text-gray-300">Designing secure, seamless access solutions while driving innovation in identity management and user trust.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <Coffee className="w-6 h-6 text-blue-400 flex-shrink-0" />
               <div>
-                <h3 className="text-lg font-semibold text-gray-200 mb-2">Team Leadership</h3>
-                <p className="text-gray-300">Mentoring developers, managing projects, and fostering a culture of innovation and continuous learning.</p>
+                <h3 className="text-lg font-semibold text-gray-200 mb-2">IT Infrastructure & Security Specialist</h3>
+                <p className="text-gray-300">Building resilient IT systems and optimizing workflows to enhance security, scalability, and business performance.</p>
               </div>
             </div>
           </div>
@@ -70,21 +70,21 @@ function About() {
 
         {/* Personal Interests */}
         <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-8">
-          <h2 className="text-2xl font-semibold text-gray-100 mb-6">Beyond Coding</h2>
+          <h2 className="text-2xl font-semibold text-gray-100 mb-6">Beyond IT Operations</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <Book className="w-6 h-6 text-blue-400 flex-shrink-0" />
                 <div>
                   <h3 className="text-lg font-semibold text-gray-200 mb-2">Continuous Learning</h3>
-                  <p className="text-gray-300">Currently exploring machine learning and AI, with a focus on practical applications in software systems.</p>
+                  <p className="text-gray-300">Currently exploring machine learning and AI, with a focus on enhancing identity management, cybersecurity, and IT infrastructure automation.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <Heart className="w-6 h-6 text-blue-400 flex-shrink-0" />
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-200 mb-2">Community Involvement</h3>
-                  <p className="text-gray-300">Active contributor to open-source projects and regular speaker at local tech meetups.</p>
+                  <h3 className="text-lg font-semibold text-gray-200 mb-2">Car Enthusiast</h3>
+                  <p className="text-gray-300">Fueling my love for speed and precision through drifting and exploring the art of performance tuning and vehicle dynamics.</p>
                 </div>
               </div>
             </div>
@@ -92,15 +92,15 @@ function About() {
               <div className="flex items-start space-x-4">
                 <Plane className="w-6 h-6 text-blue-400 flex-shrink-0" />
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-200 mb-2">Travel & Photography</h3>
-                  <p className="text-gray-300">Passionate about exploring new cultures and capturing moments through street photography.</p>
+                  <h3 className="text-lg font-semibold text-gray-200 mb-2">Devoted Beekeeper</h3>
+                  <p className="text-gray-300">Combining patience and care to nurture thriving hives, while fostering a deep appreciation for the vital role bees play in our ecosystem.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <Coffee className="w-6 h-6 text-blue-400 flex-shrink-0" />
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-200 mb-2">Coffee Enthusiast</h3>
-                  <p className="text-gray-300">Amateur barista and collector of coffee brewing equipment from around the world.</p>
+                  <h3 className="text-lg font-semibold text-gray-200 mb-2">Fitness Enthusiast</h3>
+                  <p className="text-gray-300">Committed to building strength and resilience, embracing challenges, and striving for continuous personal growth through consistent training</p>
                 </div>
               </div>
             </div>

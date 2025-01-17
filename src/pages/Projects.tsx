@@ -61,28 +61,28 @@ function ProjectCard({
 function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform built with Next.js and Stripe integration. Includes features like cart management, user authentication, and order processing.",
-      tech: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS", "PostgreSQL"],
-      image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800",
-      liveUrl: "https://ecommerce-demo.com",
-      githubUrl: "https://github.com/johndoe/ecommerce"
+      title: "Maintenance Tool",
+      description: "An all-in-one maintenance utility designed to streamline routine scripts and optimize performance. This tool simplifies the management of essential maintenance tasks, including disk cleanup, software updates, manual log management, and access to standardized scripts.",
+      tech: ["Python"],
+      image: "src/assets/settings.gif",
+      liveUrl: "https://github.com/njvanas/AIO-Maintenance/releases/tag/V1",
+      githubUrl: "https://github.com/njvanas/AIO-Maintenance"
     },
     {
-      title: "AI Chat Application",
-      description: "Real-time chat application powered by advanced NLP processing. Features include sentiment analysis, language translation, and context-aware responses.",
-      tech: ["React", "Node.js", "Socket.io", "TensorFlow.js", "OpenAI API"],
-      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=800",
-      liveUrl: "https://ai-chat-demo.com",
-      githubUrl: "https://github.com/johndoe/ai-chat"
+      title: "This Website",
+      description: "My personal website, showcasing my versatility.",
+      tech: ["JSON", "TypeScript", "JavaScript", "React", "HTML", "CSS"],
+      image: "src/assets/html.gif",
+      liveUrl: "https://njvanas.github.io/",
+      githubUrl: "https://github.com/njvanas/njvanas.github.io"
     },
     {
-      title: "Task Management System",
-      description: "Collaborative project management tool with real-time updates, task delegation, and progress tracking features.",
-      tech: ["React", "GraphQL", "MongoDB", "Express", "Socket.io"],
-      image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800",
-      liveUrl: "https://task-manager-demo.com",
-      githubUrl: "https://github.com/johndoe/task-manager"
+      title: "Access Management Tool",
+      description: "Comprehensive solution for managing access requests to IT systems, applications, and data. It is designed to streamline the approval process, ensure security, and provide a robust audit trail.",
+      tech: ["React", "Node.js", "Postgresql", "Docker"],
+      image: "src/assets/id.gif",
+      liveUrl: "going-live-soon",
+      githubUrl: "https://github.com/njvanas/AccessManagerPro"
     }
   ];
 

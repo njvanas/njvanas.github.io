@@ -91,7 +91,7 @@ function App() {
           <nav className="bg-gray-800/50 backdrop-blur-sm border-b border-gray-700">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
               <div className="flex justify-between items-center">
-                <span className="text-xl font-semibold text-gray-100">John Doe</span>
+                <span className="text-xl font-semibold text-gray-100">NJ van As</span>
                 <div className="hidden sm:flex space-x-6">
                   <NavLink href="#/about">About</NavLink>
                   <NavLink href="#/projects">Projects</NavLink>
@@ -106,15 +106,10 @@ function App() {
           <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="text-center mb-16">
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-6">
-                Cybersecurity and IT Infrastructure Specialist
-				Identity & Access Management Expert
+                Cybersecurity and IT Infrastructure Specialist | Identity & Access Management Expert
               </h1>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Driven IT professional with over 8 years of experience in managing
-				complex IT infrastructures and enhancing security protocols.
-				Specializing in identity and access management, hybrid cloud environments,
-				and workflow optimization, I am passionate about delivering secure, scalable,
-				and efficient solutions to meet evolving business needs.
+                Driven IT professional with over 8 years of experience in managing complex IT infrastructures and enhancing security protocols. Specializing in identity and access management, hybrid cloud environments, and workflow optimization, I am passionate about delivering secure, scalable, and efficient solutions to meet evolving business needs.
               </p>
             </div>
 
@@ -161,14 +156,14 @@ function App() {
                   <div className="grid gap-4">
                     <QuickCard
                       icon={<Rocket className="w-6 h-6" />}
-                      title="E-Commerce Platform"
-                      description="Built with Next.js and Stripe"
+                      title="Maintenance Tool"
+                      description="Built with Python"
                       href="#/projects"
                     />
                     <QuickCard
                       icon={<Brain className="w-6 h-6" />}
-                      title="AI Chat Application"
-                      description="Real-time NLP processing system"
+                      title="This Website"
+                      description="Static Front-End website"
                       href="#/projects"
                     />
                   </div>
@@ -183,14 +178,14 @@ function App() {
                   <div className="grid gap-4">
                     <QuickCard
                       icon={<Terminal className="w-6 h-6" />}
-                      title="Senior Developer"
-                      description="Tech Lead at Innovation Corp"
+                      title="User Authentication and Authorization Specialist"
+                      description="Authentication and Authorization Specialist at Quion"
                       href="#/experience"
                     />
                     <QuickCard
                       icon={<Coffee className="w-6 h-6" />}
                       title="Startup Founder"
-                      description="Built and scaled DevTools SaaS"
+                      description="E-commerce business that operated on Wordpress, C-Panel & Shopify."
                       href="#/experience"
                     />
                   </div>
