@@ -1,5 +1,9 @@
 import React from 'react';
-import { ArrowLeft, Github, Globe, Rocket, Brain, ShoppingCart, MessageSquare } from 'lucide-react';
+import { ArrowLeft, Github, Globe } from 'lucide-react';
+import gif1 from '../assets/html.gif';
+import gif2 from '../assets/id.gif';
+import gif3 from '../assets/settings.gif';
+import gif4 from '../assets/checklist.gif';
 
 function ProjectCard({ 
   title, 
@@ -63,8 +67,8 @@ function Projects() {
     {
       title: "Maintenance Tool",
       description: "An all-in-one maintenance utility designed to streamline routine scripts and optimize performance. This tool simplifies the management of essential maintenance tasks, including disk cleanup, software updates, manual log management, and access to standardized scripts.",
-      tech: ["Python"],
-      image: "src/assets/settings.gif",
+      tech: ["Python", "PowerShell"],
+      image: gif3,
       liveUrl: "https://github.com/njvanas/AIO-Maintenance/releases/tag/V1",
       githubUrl: "https://github.com/njvanas/AIO-Maintenance"
     },
@@ -72,7 +76,7 @@ function Projects() {
       title: "This Website",
       description: "My personal website, showcasing my versatility.",
       tech: ["JSON", "TypeScript", "JavaScript", "React", "HTML", "CSS"],
-      image: "src/assets/html.gif",
+      image: gif1,
       liveUrl: "https://njvanas.github.io/",
       githubUrl: "https://github.com/njvanas/njvanas.github.io"
     },
@@ -80,9 +84,17 @@ function Projects() {
       title: "Access Management Tool",
       description: "Comprehensive solution for managing access requests to IT systems, applications, and data. It is designed to streamline the approval process, ensure security, and provide a robust audit trail.",
       tech: ["React", "Node.js", "Postgresql", "Docker"],
-      image: "src/assets/id.gif",
+      image: gif2,
       liveUrl: "going-live-soon",
       githubUrl: "https://github.com/njvanas/AccessManagerPro"
+    },
+    {
+      title: "Typing Speed Test",
+      description: "A fun little website to test your typing skills and see what your WPM is.",
+      tech: ["JavaScript", "HTML", "CSS"],
+      image: gif4,
+      liveUrl: "https://njvanas.github.io/typing-speed-test",
+      githubUrl: "https://github.com/njvanas/typing-speed-test"
     }
   ];
 
