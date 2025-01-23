@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaProjectDiagram, FaEnvelope, FaBriefcase } from 'react-icons/fa';
-import About from '@/About';
-import Projects from '@/Projects';
-import Contact from '@/Contact';
-import Experience from '@/Experience';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Experience from './pages/Experience';
 
 function App() {
     return (
