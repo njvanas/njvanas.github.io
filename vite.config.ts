@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   // Set the base path dynamically based on the environment
-  base: process.env.NODE_ENV === 'github' ? '/njvanas.github.io/' : '/',
+  base: '/njvanas.github.io/',
   plugins: [react()],
   build: {
     outDir: 'dist',
