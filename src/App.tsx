@@ -32,12 +32,13 @@ function App() {
                 {/* Main Content */}
                 <div className="p-8 flex-grow">
                     <Routes>
-						<Route path="/" element={<Home />} />
-                        <Route path="./pages/about" element={<About />} />
-                        <Route path="./pages/projects" element={<Projects />} />
-                        <Route path="./pages/contact" element={<Contact />} />
-                        <Route path="./pages/experience" element={<Experience />} />
-                    </Routes>
+						<Route path="./" element={<Home />} />
+						<Route path="./projects" element={<Projects />} />
+						<Route path="./contact" element={<Contact />} />
+						<Route path="./about" element={<About />} />
+						<Route path="./experience" element={<Experience />} />
+					</Routes>
+
                 </div>
 
                 {/* Footer */}
