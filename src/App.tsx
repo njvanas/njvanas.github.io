@@ -32,7 +32,6 @@ function App() {
                 {/* Main Content */}
                 <div className="p-8 flex-grow">
                     <Routes>
-                        <Route path="/" element={<h1 className="text-3xl">Welcome to the Home Page</h1>} />
                         <Route path="/about" element={<About />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/contact" element={<Contact />} />
