@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaProjectDiagram, FaEnvelope, FaBriefcase } from 'react-icons/fa';
+import Home from './pages/Home'; // Import Home component
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
@@ -32,13 +33,12 @@ function App() {
                 {/* Main Content */}
                 <div className="p-8 flex-grow">
                     <Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/projects" element={<Projects />} />
-						<Route path="/contact" element={<Contact />} />
-						<Route path="/about" element={<About />} />
-						<Route path="/experience" element={<Experience />} />
-					</Routes>
-
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/projects" element={<Projects />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/experience" element={<Experience />} />
+                    </Routes>
                 </div>
 
                 {/* Footer */}
