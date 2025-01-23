@@ -1,3 +1,10 @@
+name: Build and Push Docker Image
+
+on:
+  push:
+    branches:
+      - main  # Trigger workflow when pushing to the main branch
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
