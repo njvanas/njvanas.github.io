@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaProjectDiagram, FaEnvelope, FaBriefcase } from 'react-icons/fa';
-import Home from './pages/Home'; // Import Home component
+import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
