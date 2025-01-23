@@ -5,7 +5,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   // Set the base path dynamically based on the environment
   base: '/njvanas.github.io/',
-  plugins: [react()],
+  plugins: [
+	react(), 
+	mkcert() // Keep any other plugins you might need
+	],
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
