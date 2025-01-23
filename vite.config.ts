@@ -2,14 +2,15 @@ import { defineConfig } from 'vite';
 import mkcert from 'vite-plugin-mkcert';
 import react from '@vitejs/plugin-react';
 
-export default defineConfig({ // Set the base path to match the GitHub repository name
-  base: process.env.NODE_ENV === 'github' ? '/njvanas.github.io/' : '/', // Dynamic base path
+export default defineConfig({
+  // Set the base path dynamically based on the environment
+  base: process.env.NODE_ENV === 'github' ? '/njvanas.github.io/' : '/',
   plugins: [react()],
   build: {
-    outDir: 'dist', // Ensure output directory is named 'dist'
-    assetsDir: 'assets', // Specify directory for assets
+    outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
-      external: ['react-router-dom', 'react-icons'],
+      external: [], // Do not exclude any dependencies from bundling
     },
   },
   resolve: {
