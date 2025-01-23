@@ -8,7 +8,7 @@ export default defineConfig({ // Set the base path to match the GitHub repositor
     outDir: 'dist', // Ensure output directory is named 'dist'
     assetsDir: 'assets', // Specify directory for assets
     rollupOptions: {
-      external: ['react-router-dom'],
+      external: ['react-router-dom', 'react-icons'],
     },
   },
   resolve: {
