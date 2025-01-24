@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import { UserCircle2, Briefcase, FolderKanban, Mail, Code, Rocket, Award, Terminal, Brain, Coffee } from 'lucide-react';
-import App from '/App';
+import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter basename="/njvanas.github.io">
       <Routes>
-        <Route path="/App" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="./pages/About" element={<About />} />
 		<Route path="./pages/Projects" element={<Projects />} />
 		<Route path="./pages/Experience" element={<Experience />} />
