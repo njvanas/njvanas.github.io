@@ -6,6 +6,8 @@ export default defineConfig({
   base: '/', // Replace <repository-name> with your actual repository name
   plugins: [react()],
   build: {
+	rollupOptions: {
+    external: ['react-router-dom'],
     outDir: 'dist', // Ensure output directory is named 'dist'
     assetsDir: 'assets', // Specify directory for assets
   },
