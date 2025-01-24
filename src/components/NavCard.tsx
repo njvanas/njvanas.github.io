@@ -1,4 +1,3 @@
-// src/components/NavCard.tsx
 import React from 'react';
 
 interface NavCardProps {
