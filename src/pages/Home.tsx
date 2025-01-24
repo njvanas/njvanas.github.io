@@ -1,5 +1,8 @@
 import React from 'react';
-import { NavLink, NavCard, QuickCard } from './src/components'; // Import these if they are reusable components
+import NavLink from '../components/NavLink';
+import NavCard from '../components/NavCard';
+import QuickCard from '../components/QuickCard';
+
 import { UserCircle2, FolderKanban, Briefcase, Mail, Code, Rocket, Award, Terminal, Brain, Coffee } from 'lucide-react';
 
 const Home: React.FC = () => {
