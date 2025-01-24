@@ -1,9 +1,25 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import { UserCircle2, Briefcase, FolderKanban, Mail, Code, Rocket, Award, Terminal, Brain, Coffee } from 'lucide-react';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
+
+function App() {
+  return (
+    <BrowserRouter basename="/njvanas.github.io">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+		<Route path="/Projects" element={<Projects />} />
+		<Route path="/Experience" element={<Experience />} />
+		<Route path="/Contact" element={<Contact />} />
+        {/* Add other routes here */}
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
