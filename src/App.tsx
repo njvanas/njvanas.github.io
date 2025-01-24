@@ -1,14 +1,13 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import React from 'react';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Experience from './pages/Experience';
-import Contact from './pages/Contact';
+import Home from './Home';
+import About from './About';
+import Projects from './Projects';
+import Experience from './Experience';
+import Contact from './Contact';
 
 function App() {
   return (
-    <HashRouter basename="/njvanas.github.io">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
