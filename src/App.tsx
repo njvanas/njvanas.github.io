@@ -1,9 +1,9 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Projects from './Projects';
-import Experience from './Experience';
-import Contact from './Contact';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Experience from './pages/Experience';
+import Contact from './pages/Contact';
 
 function App() {
   return (
