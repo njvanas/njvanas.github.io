@@ -19,6 +19,8 @@ function App() {
         {/* Add other routes here */}
       </Routes>
     </BrowserRouter>
+	  // Get the current hash without the '#' symbol
+  const currentPath = window.location.hash.slice(1) || '/';
   );
 }
 
@@ -86,10 +88,6 @@ function QuickCard({
     </a>
   );
 }
-
-function App() {
-  // Get the current hash without the '#' symbol
-  const currentPath = window.location.hash.slice(1) || '/';
   
   // Render different components based on the path
   switch (currentPath) {
