@@ -1,3 +1,4 @@
+// src/components/NavCard.tsx
 import React from 'react';
 
 interface NavCardProps {
@@ -11,7 +12,7 @@ const NavCard: React.FC<NavCardProps> = ({ icon, title, description, href }) => 
   return (
     <a
       href={href}
-      className="group bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center text-center hover:scale-105 hover:rotate-[360deg]"
+      className="group bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center text-center hover:scale-105"
     >
       <div className="text-blue-400 mb-4 transform transition-transform duration-300 group-hover:scale-110">
         {icon}

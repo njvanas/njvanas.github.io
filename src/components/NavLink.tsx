@@ -1,3 +1,4 @@
+// src/components/NavLink.tsx
 import React from 'react';
 
 interface NavLinkProps {

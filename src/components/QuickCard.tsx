@@ -1,3 +1,4 @@
+// src/components/QuickCard.tsx
 import React from 'react';
 
 interface QuickCardProps {
