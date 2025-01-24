@@ -19,8 +19,6 @@ function App() {
         {/* Add other routes here */}
       </Routes>
     </BrowserRouter>
-	  // Get the current hash without the '#' symbol
-  const currentPath = window.location.hash.slice(1) || '/';
   );
 }
 
