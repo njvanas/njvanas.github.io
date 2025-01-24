@@ -7,7 +7,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
 	rollupOptions: {
-    external: ['react-router-dom'],
+    external: ['react-router-dom']
+	{,
     outDir: 'dist', // Ensure output directory is named 'dist'
     assetsDir: 'assets', // Specify directory for assets
   },
