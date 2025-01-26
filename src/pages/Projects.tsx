@@ -95,7 +95,15 @@ function Projects() {
       image: gif4,
       liveUrl: "https://njvanas.github.io/typing-speed-test",
       githubUrl: "https://github.com/njvanas/typing-speed-test"
-    }
+    },
+    {
+      title: "Recipe Tool",
+      description: "An all-in-one recipe utility designed to streamline the recipe processs for bodybuilders and general fitness persons.",
+      tech: ["Python", "PowerShell"],
+      image: gif5,
+      liveUrl: "https://gymbrorecipes.netlify.app",
+      githubUrl: "https://github.com/njvanas/GymBroRecipes"
+    },
   ];
 
   return (
