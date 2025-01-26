@@ -4,7 +4,7 @@ import gif1 from '../assets/html.gif';
 import gif2 from '../assets/id.gif';
 import gif3 from '../assets/settings.gif';
 import gif4 from '../assets/checklist.gif';
-import gif5 from '../assets/recipes.gif';
+import gif5 from '../assets/cookbook.gif';
 
 function ProjectCard({ 
   title, 
