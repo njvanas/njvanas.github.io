@@ -1,24 +1,11 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import App from './App.tsx';
-import './index.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';  // Ensure this is imported so Vite can bundle it properly
+import App from './App';
 
-// Ensure the correct basename for GitHub Pages hosting
-const router = createBrowserRouter(
-  [
-    {
-      path: '/*',  // This wildcard will match all routes
-      element: <App />,
-    },
-  ],
-  {
-    basename: '/njvanas.github.io', // Replace with the correct base path
-  }
-);
-
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
