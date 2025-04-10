@@ -10,31 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Set up Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      # Clear npm cache
-      - name: Clear npm cache
-        run: npm cache clean --force
-
-      # Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Build the project
-      - name: Build project
+      - name: Build the project
         run: npm run build
 
-      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./dist  # Make sure this points to the correct directory
