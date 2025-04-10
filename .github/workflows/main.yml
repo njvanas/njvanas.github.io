@@ -18,13 +18,10 @@ jobs:
         with:
           node-version: 18
 
-      - name: Clear npm cache
-        run: npm cache clean --force
-
       - name: Install dependencies
         run: npm install
 
-      - name: Build the project
+      - name: Build project
         run: npm run build
 
       - name: Deploy to GitHub Pages

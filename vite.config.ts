@@ -2,15 +2,11 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  // Base path for GitHub Pages
-  base: '/njvanas.github.io/', // Ensure this matches your GitHub Pages repo
-
+  // Set the base path to match the GitHub repository name
+  base: '/', // Replace <repository-name> with your actual repository name
   plugins: [react()],
   build: {
-    outDir: 'dist', // Output directory for production build
-    assetsDir: 'assets', // Where static assets like images go
-    rollupOptions: {
-      external: ['react-router-dom'], // Externalize react-router-dom
-    },
+    outDir: 'dist', // Ensure output directory is named 'dist'
+    assetsDir: 'assets', // Specify directory for assets
   },
 });
