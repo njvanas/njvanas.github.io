@@ -6,71 +6,6 @@ import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 
-function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <Link
-      to={href}
-      className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
-    >
-      {children}
-    </Link>
-  );
-}
-
-function NavCard({
-  icon,
-  title,
-  description,
-  href,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  href: string;
-}) {
-  return (
-    <Link
-      to={href}
-      className="group bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center text-center hover:scale-105 hover:rotate-[360deg]"
-    >
-      <div className="text-blue-400 mb-4 transform transition-transform duration-300 group-hover:scale-110">
-        {icon}
-      </div>
-      <h3 className="text-xl font-semibold text-gray-100 mb-2">{title}</h3>
-      <p className="text-gray-300">{description}</p>
-    </Link>
-  );
-}
-
-function QuickCard({
-  icon,
-  title,
-  description,
-  href,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  href: string;
-}) {
-  return (
-    <Link
-      to={href}
-      className="group block bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-lg p-4 transition-all duration-500 hover:bg-gray-700/50 hover:scale-105 hover:shadow-2xl"
-    >
-      <div className="flex items-start space-x-4">
-        <div className="text-blue-400 transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-12">
-          {icon}
-        </div>
-        <div>
-          <h4 className="text-lg font-semibold text-gray-100 mb-1">{title}</h4>
-          <p className="text-gray-400 text-sm">{description}</p>
-        </div>
-      </div>
-    </Link>
-  );
-}
-
 function App() {
   return (
     <Router basename="/njvanas.github.io"> {/* Ensure the basename is set for GitHub Pages subpath */}
@@ -185,7 +120,7 @@ function App() {
 
       {/* Define Routes */}
       <Routes>
-        <Route path="/" element={<About />} />  {/* Replace Home with About (or another component) */}
+        <Route path="/" element={<About />} /> {/* This is now the "Home" page */}
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
