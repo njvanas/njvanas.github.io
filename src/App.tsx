@@ -185,7 +185,7 @@ function App() {
 
       {/* Define Routes */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<About />} />  {/* Replace Home with About (or another component) */}
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
