@@ -7,8 +7,8 @@
   <title>NJ van As - Tech is Fun</title>
   <meta name="description" content="Personal website and projects by NJ van As." />
   
-  <!-- Link to CSS -->
-  <link rel="stylesheet" href="./src/index.css">
+  <!-- Correct path to the CSS file after build -->
+  <link rel="stylesheet" href="/assets/index.css">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -23,17 +23,10 @@
   <meta name="twitter:title" content="Welcome to NJ van As" />
   <meta name="twitter:description" content="Personal website and projects by NJ van As." />
   <meta name="twitter:image" content="https://njvanas.github.io/personal_website.jpg" />
-
-  <script type="text/javascript">
-    // This script ensures that all 404 errors on GitHub Pages are redirected to index.html
-    if (window.location.pathname !== '/') {
-      window.location.replace(window.location.origin + '/njvanas.github.io/');
-    }
-  </script>
 </head>
 <body>
   <div id="root"></div>
-  <!-- Link to compiled JavaScript -->
-<script type="module" src="./src/main.tsx"></script>  <!-- Update path for deployment -->
+  <!-- Correct path to the main JS file after build -->
+  <script type="module" src="/assets/main.tsx"></script>
 </body>
 </html>
