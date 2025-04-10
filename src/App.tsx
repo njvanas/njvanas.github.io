@@ -6,16 +6,6 @@ import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 
-// Define the Home component
-function Home() {
-  return (
-    <div>
-      <h1>Welcome to my Portfolio</h1>
-      <p>Cybersecurity and IT Infrastructure Specialist | Identity & Access Management Expert</p>
-    </div>
-  );
-}
-
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
     <Link
