@@ -23,6 +23,13 @@
   <meta name="twitter:title" content="Welcome to NJ van As" />
   <meta name="twitter:description" content="Personal website and projects by NJ van As." />
   <meta name="twitter:image" content="https://njvanas.github.io/personal_website.jpg" />
+
+  <script type="text/javascript">
+    // This script ensures that all 404 errors on GitHub Pages are redirected to index.html
+    if (window.location.pathname !== '/') {
+      window.location.replace(window.location.origin + '/njvanas.github.io/');
+    }
+  </script>
 </head>
 <body>
   <div id="root"></div>
