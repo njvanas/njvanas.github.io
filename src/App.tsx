@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { UserCircle2, Briefcase, FolderKanban, Mail, Code, Rocket, Award, Terminal, Brain, Coffee } from 'lucide-react';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 
-function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
+function NavLink({ href, children, isActive }: { href: string; children: React.ReactNode; isActive?: boolean }) {
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.hash = href.replace('#', '');
+  };
+
   return (
     <a
       href={href}
-      className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
+      onClick={handleClick}
+      className={`transition-colors duration-200 ${
+        isActive 
+          ? 'text-blue-400' 
+          : 'text-gray-300 hover:text-blue-400'
+      }`}
     >
       {children}
     </a>
@@ -27,9 +37,15 @@ function NavCard({
   description: string;
   href: string;
 }) {
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.hash = href.replace('#/', '');
+  };
+
   return (
     <a
       href={href}
+      onClick={handleClick}
       className="group bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center text-center hover:scale-105 hover:rotate-[360deg]"
     >
       <div className="text-blue-400 mb-4 transform transition-transform duration-300 group-hover:scale-110">
@@ -52,9 +68,15 @@ function QuickCard({
   description: string;
   href: string;
 }) {
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.hash = href.replace('#/', '');
+  };
+
   return (
     <a
       href={href}
+      onClick={handleClick}
       className="group block bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-lg p-4 transition-all duration-500 hover:bg-gray-700/50 hover:scale-105 hover:shadow-2xl"
     >
       <div className="flex items-start space-x-4">
@@ -71,18 +93,36 @@ function QuickCard({
 }
 
 function App() {
-  // Get the current hash without the '#' symbol
-  const currentPath = window.location.hash.slice(1) || '/';
-  
+  const [currentPath, setCurrentPath] = useState('');
+
+  useEffect(() => {
+    // Function to handle hash changes
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1) || '/';
+      setCurrentPath(hash);
+    };
+
+    // Set initial path
+    handleHashChange();
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
+
   // Render different components based on the path
   switch (currentPath) {
-    case '/about':
+    case 'about':
       return <About />;
-    case '/projects':
+    case 'projects':
       return <Projects />;
-    case '/experience':
+    case 'experience':
       return <Experience />;
-    case '/contact':
+    case 'contact':
       return <Contact />;
     default:
       return (
@@ -93,10 +133,10 @@ function App() {
               <div className="flex justify-between items-center">
                 <span className="text-xl font-semibold text-gray-100">NJ van As</span>
                 <div className="hidden sm:flex space-x-6">
-                  <NavLink href="#/about">About</NavLink>
-                  <NavLink href="#/projects">Projects</NavLink>
-                  <NavLink href="#/experience">Experience</NavLink>
-                  <NavLink href="#/contact">Contact</NavLink>
+                  <NavLink href="#about" isActive={currentPath === 'about'}>About</NavLink>
+                  <NavLink href="#projects" isActive={currentPath === 'projects'}>Projects</NavLink>
+                  <NavLink href="#experience" isActive={currentPath === 'experience'}>Experience</NavLink>
+                  <NavLink href="#contact" isActive={currentPath === 'contact'}>Contact</NavLink>
                 </div>
               </div>
             </div>

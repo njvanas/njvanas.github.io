@@ -7,7 +7,11 @@ function About() {
       {/* Back Navigation */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <a 
-          href="/" 
+          href="#" 
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.hash = '';
+          }}
           className="inline-flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-200"
         >
           <ArrowLeft className="w-5 h-5 mr-2" />
