@@ -49,7 +49,7 @@ This portfolio serves as a comprehensive showcase of my:
 
 ## 📊 Project Status
 
-[![Deploy to GitHub Pages](https://github.com/njvanas/njvanas.github.io/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/njvanas/njvanas.github.io/actions/workflows/main.yml)
+[![Deploy to GitHub Pages](https://github.com/njvanas/njvanas.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/njvanas/njvanas.github.io/actions/workflows/deploy.yml)
 [![Build and Push Docker Image](https://github.com/njvanas/njvanas.github.io/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/njvanas/njvanas.github.io/actions/workflows/docker-publish.yml)
 [![CodeQL Advanced](https://github.com/njvanas/njvanas.github.io/actions/workflows/codeql.yml/badge.svg)](https://github.com/njvanas/njvanas.github.io/actions/workflows/codeql.yml)
 
