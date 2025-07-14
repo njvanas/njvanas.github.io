@@ -2,18 +2,244 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   
   body {
-    @apply antialiased;
+    @apply antialiased font-inter;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  /* Typography Scale */
+  h1 { @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight; }
+  h2 { @apply text-3xl md:text-4xl font-bold leading-tight; }
+  h3 { @apply text-2xl md:text-3xl font-semibold leading-tight; }
+  h4 { @apply text-xl md:text-2xl font-semibold leading-tight; }
+  h5 { @apply text-lg md:text-xl font-medium leading-tight; }
+  h6 { @apply text-base md:text-lg font-medium leading-tight; }
+  
+  /* Optimal reading line length (66 characters max) */
+  p, .prose {
+    @apply leading-relaxed;
+    max-width: 66ch;
+    line-height: 1.6;
+  }
+
+  /* Code elements */
+  code {
+    @apply font-mono bg-cyber-dark/20 px-2 py-1 rounded text-sm;
+  }
+
+  pre {
+    @apply font-mono bg-cyber-dark/10 p-4 rounded-lg overflow-x-auto;
   }
 }
 
 @layer components {
+  /* Custom Color Palette - Cybersecurity Theme */
+  :root {
+    --cyber-primary: #00d4ff;
+    --cyber-secondary: #0099cc;
+    --cyber-accent: #ff6b35;
+    --cyber-success: #00ff88;
+    --cyber-warning: #ffaa00;
+    --cyber-error: #ff4757;
+    --cyber-dark: #0a0e27;
+    --cyber-darker: #050814;
+    --cyber-light: #1a1f3a;
+    --cyber-lighter: #2d3561;
+    --cyber-text: #e2e8f0;
+    --cyber-text-muted: #94a3b8;
+  }
+
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyber-primary to-cyber-secondary;
+  }
+
+  .bg-gradient-cyber {
+    background: linear-gradient(135deg, var(--cyber-dark) 0%, var(--cyber-darker) 100%);
+  }
+
+  .bg-gradient-cyber-light {
+    background: linear-gradient(135deg, var(--cyber-light) 0%, var(--cyber-lighter) 100%);
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply backdrop-blur-md bg-white/5 border border-white/10;
+  }
+
+  .glass-dark {
+    @apply backdrop-blur-md bg-black/20 border border-white/5;
+  }
+
+  /* Interactive elements */
+  .btn-primary {
+    @apply bg-gradient-to-r from-cyber-primary to-cyber-secondary text-cyber-dark font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyber-primary/25;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-cyber-primary text-cyber-primary font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-cyber-primary hover:text-cyber-dark hover:scale-105;
+  }
+
+  .card {
+    @apply glass rounded-xl p-6 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-cyber-primary/10;
+  }
+
+  .card-interactive {
+    @apply card cursor-pointer hover:border-cyber-primary/30 hover:bg-white/10;
+  }
+
+  /* Navigation styles */
+  .nav-link {
+    @apply relative text-cyber-text-muted hover:text-cyber-primary transition-all duration-300 font-medium;
+  }
+
+  .nav-link.active {
+    @apply text-cyber-primary;
+  }
+
+  .nav-link::after {
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-cyber-primary transition-all duration-300;
+    content: '';
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  /* Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  /* Scrollbar styling */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-cyber-dark;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-cyber-primary/50 rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyber-primary;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Typography utilities */
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Responsive text sizing */
+  .text-responsive-xl {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  .text-responsive-lg {
+    @apply text-lg md:text-xl lg:text-2xl;
+  }
+
+  /* Focus states for accessibility */
+  .focus-visible {
+    @apply focus:outline-none focus:ring-2 focus:ring-cyber-primary focus:ring-offset-2 focus:ring-offset-cyber-dark;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px var(--cyber-primary); }
+  to { box-shadow: 0 0 30px var(--cyber-primary), 0 0 40px var(--cyber-primary); }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Custom utility classes */
+.cyber-primary { color: var(--cyber-primary); }
+.cyber-secondary { color: var(--cyber-secondary); }
+.cyber-accent { color: var(--cyber-accent); }
+.cyber-success { color: var(--cyber-success); }
+.cyber-warning { color: var(--cyber-warning); }
+.cyber-error { color: var(--cyber-error); }
+.cyber-text { color: var(--cyber-text); }
+.cyber-text-muted { color: var(--cyber-text-muted); }
+
+.bg-cyber-primary { background-color: var(--cyber-primary); }
+.bg-cyber-secondary { background-color: var(--cyber-secondary); }
+.bg-cyber-accent { background-color: var(--cyber-accent); }
+.bg-cyber-dark { background-color: var(--cyber-dark); }
+.bg-cyber-darker { background-color: var(--cyber-darker); }
+.bg-cyber-light { background-color: var(--cyber-light); }
+.bg-cyber-lighter { background-color: var(--cyber-lighter); }
+
+.border-cyber-primary { border-color: var(--cyber-primary); }
+.border-cyber-secondary { border-color: var(--cyber-secondary); }
+
+/* Responsive breakpoints optimization */
+@media (max-width: 640px) {
+  .container-custom {
+    @apply px-4;
+  }
+  
+  .section-padding {
+    @apply py-12;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-custom {
+    @apply max-w-6xl;
   }
 }
