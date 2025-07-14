@@ -105,6 +105,14 @@ function Projects() {
       liveUrl: "https://gymbrorecipes.netlify.app",
       githubUrl: "https://github.com/njvanas/GymBroRecipes"
     },
+    {
+      title: "Auto Office Install Tool",
+      description: "Automated tool for streamlined Microsoft Office installation and configuration. Simplifies the deployment process with customizable installation options and automated setup procedures.",
+      tech: ["PowerShell", "Batch"],
+      image: gif3, // Using the same maintenance tool gif as placeholder
+      liveUrl: "https://njvanas.github.io/Office-Auto-Install/",
+      githubUrl: "https://github.com/njvanas/Office-Auto-Install"
+    },
   ];
 
   return (
