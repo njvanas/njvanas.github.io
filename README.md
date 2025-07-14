@@ -18,7 +18,6 @@ This portfolio serves as a comprehensive showcase of my:
 - **Tailwind CSS** for modern, responsive design
 - **Vite** for fast development and optimized builds
 - **GitHub Actions** for automated deployment
-- **Docker** support for containerized deployment
 
 ## 🎯 What You'll Find
 
@@ -31,10 +30,11 @@ This portfolio serves as a comprehensive showcase of my:
 - Expertise in **PowerShell automation**, **Intune & Autopilot**, and **Conditional Access**
 
 ### 🔧 Featured Projects
-- **Maintenance Tool** - Python-based system optimization utility
-- **Access Management Tool** - Comprehensive access request management system
-- **Typing Speed Test** - Interactive web application
-- **Recipe Tool** - Fitness-focused recipe management system
+- **Maintenance Tool** - All-in-one maintenance utility for routine scripts and performance optimization
+- **This Website** - Personal portfolio showcasing versatility with modern web technologies
+- **Access Management Tool** - Comprehensive solution for managing access requests to IT systems
+- **Typing Speed Test** - Fun web application to test typing skills and WPM
+- **Recipe Tool** - All-in-one recipe utility for bodybuilders and fitness enthusiasts
 
 ### 🌍 Current Focus
 - **User Authentication & Authorization** at Quion Groep
@@ -50,7 +50,6 @@ This portfolio serves as a comprehensive showcase of my:
 ## 📊 Project Status
 
 [![Deploy to GitHub Pages](https://github.com/njvanas/njvanas.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/njvanas/njvanas.github.io/actions/workflows/deploy.yml)
-[![Build and Push Docker Image](https://github.com/njvanas/njvanas.github.io/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/njvanas/njvanas.github.io/actions/workflows/docker-publish.yml)
 [![CodeQL Advanced](https://github.com/njvanas/njvanas.github.io/actions/workflows/codeql.yml/badge.svg)](https://github.com/njvanas/njvanas.github.io/actions/workflows/codeql.yml)
 
 ## 🤝 Connect With Me
