@@ -206,6 +206,12 @@ function App() {
                       description="Static Front-End website"
                       href="#/projects"
                     />
+                    <QuickCard
+                      icon={<Terminal className="w-6 h-6" />}
+                      title="Auto Office Install Tool"
+                      description="Automated Microsoft Office deployment"
+                      href="https://njvanas.github.io/Office-Auto-Install/"
+                    />
                   </div>
                 </div>
 
@@ -226,6 +232,12 @@ function App() {
                       icon={<Coffee className="w-6 h-6" />}
                       title="Startup Founder"
                       description="E-commerce business that operated on Wordpress, C-Panel & Shopify."
+                      href="#/experience"
+                    />
+                    <QuickCard
+                      icon={<Award className="w-6 h-6" />}
+                      title="IT Coordinator/Manager"
+                      description="Managed IT operations, budgets, and hybrid environments at Unique Hydra & Gist"
                       href="#/experience"
                     />
                   </div>
