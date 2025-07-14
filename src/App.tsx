@@ -149,7 +149,7 @@ function App() {
                 Cybersecurity and IT Infrastructure Specialist | Identity & Access Management Expert
               </h1>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Driven IT professional with over 8 years of experience in managing complex IT infrastructures and enhancing security protocols. Specializing in identity and access management, hybrid cloud environments, and workflow optimization, I am passionate about delivering secure, scalable, and efficient solutions to meet evolving business needs.
+                Driven IT professional with more than a decade of experience in managing complex IT infrastructures and enhancing security protocols. Specializing in identity and access management, hybrid cloud environments, and workflow optimization, I am passionate about delivering secure, scalable, and efficient solutions to meet evolving business needs.
               </p>
             </div>
 
