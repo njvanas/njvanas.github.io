@@ -1,5 +1,6 @@
 import React from 'react';
-import { ExternalLink, Github, Code, Wrench, Globe, Zap, ChefHat } from 'lucide-react';
+import { ExternalLink, Github, Code, Wrench, Globe, Zap, ChefHat, Download } from 'lucide-react';
+import { handleExternalLink } from '../utils/security';
 
 interface Project {
   title: string;
@@ -8,6 +9,8 @@ interface Project {
   icon: React.ReactNode;
   category: string;
   highlights: string[];
+  liveUrl?: string;
+  githubUrl?: string;
 }
 
 const Projects: React.FC = () => {
@@ -18,6 +21,8 @@ const Projects: React.FC = () => {
       technologies: ["PowerShell", "Windows", "Automation", "System Administration"],
       icon: <Wrench className="w-8 h-8" />,
       category: "System Administration",
+      liveUrl: "https://njvanas.github.io/AIO-Maintenance/",
+      githubUrl: "https://github.com/njvanas/AIO-Maintenance",
       highlights: [
         "Automated routine maintenance tasks",
         "Performance monitoring and optimization",
@@ -26,11 +31,28 @@ const Projects: React.FC = () => {
       ]
     },
     {
+      title: "Office Auto Install Tool",
+      description: "Automated Microsoft Office installation and configuration utility",
+      technologies: ["PowerShell", "Windows", "Microsoft Office", "Automation"],
+      icon: <Download className="w-8 h-8" />,
+      category: "System Administration",
+      liveUrl: "https://njvanas.github.io/Office-Auto-Install/",
+      githubUrl: "https://github.com/njvanas/Office-Auto-Install",
+      highlights: [
+        "Automated Office suite installation",
+        "Configuration management",
+        "Version control and updates",
+        "Enterprise deployment ready"
+      ]
+    },
+    {
       title: "Personal Portfolio Website",
       description: "Modern, responsive portfolio showcasing technical skills and professional experience",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
       icon: <Globe className="w-8 h-8" />,
       category: "Web Development",
+      liveUrl: "https://njvanas.github.io",
+      githubUrl: "https://github.com/njvanas/njvanas.github.io",
       highlights: [
         "Responsive design with modern aesthetics",
         "TypeScript for type safety",
@@ -57,6 +79,8 @@ const Projects: React.FC = () => {
       technologies: ["JavaScript", "HTML5", "CSS3", "Web APIs"],
       icon: <Zap className="w-8 h-8" />,
       category: "Web Application",
+      liveUrl: "https://njvanas.github.io/typing-speed-test/",
+      githubUrl: "https://github.com/njvanas/typing-speed-test",
       highlights: [
         "Real-time typing speed calculation",
         "Accuracy tracking and statistics",
@@ -150,15 +174,31 @@ const Projects: React.FC = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex space-x-3">
-                  <button className="flex items-center space-x-2 px-3 py-2 bg-blue-600/20 text-blue-400 rounded hover:bg-blue-600/30 transition-colors duration-300 text-sm">
-                    <ExternalLink className="w-4 h-4" />
-                    <span>View Details</span>
-                  </button>
-                  <button className="flex items-center space-x-2 px-3 py-2 bg-slate-700/50 text-gray-300 rounded hover:bg-slate-700/70 transition-colors duration-300 text-sm">
-                    <Github className="w-4 h-4" />
-                    <span>Code</span>
-                  </button>
+                <div className="flex flex-wrap gap-2">
+                  {project.liveUrl && (
+                    <button
+                      onClick={() => handleExternalLink(project.liveUrl!)}
+                      className="flex items-center space-x-2 px-3 py-2 bg-blue-600/20 text-blue-400 rounded hover:bg-blue-600/30 transition-colors duration-300 text-sm"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      <span>Live Demo</span>
+                    </button>
+                  )}
+                  {project.githubUrl && (
+                    <button
+                      onClick={() => handleExternalLink(project.githubUrl!)}
+                      className="flex items-center space-x-2 px-3 py-2 bg-slate-700/50 text-gray-300 rounded hover:bg-slate-700/70 transition-colors duration-300 text-sm"
+                    >
+                      <Github className="w-4 h-4" />
+                      <span>Source Code</span>
+                    </button>
+                  )}
+                  {!project.liveUrl && !project.githubUrl && (
+                    <button className="flex items-center space-x-2 px-3 py-2 bg-blue-600/20 text-blue-400 rounded hover:bg-blue-600/30 transition-colors duration-300 text-sm">
+                      <ExternalLink className="w-4 h-4" />
+                      <span>View Details</span>
+                    </button>
+                  )}
                 </div>
               </div>
             ))}
