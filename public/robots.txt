@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Security-related files
+Disallow: /.well-known/
+Disallow: /security.txt
+
+# Sitemap
+Sitemap: https://njvanas.github.io/sitemap.xml

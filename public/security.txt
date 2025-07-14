@@ -1,0 +1,6 @@
+Contact: mailto:njvanas@duck.com
+Expires: 2025-12-31T23:59:59.000Z
+Encryption: https://keybase.io/njvanas
+Preferred-Languages: en, nl
+Canonical: https://njvanas.github.io/.well-known/security.txt
+Policy: https://njvanas.github.io/security-policy

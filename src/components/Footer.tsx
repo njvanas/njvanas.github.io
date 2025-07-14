@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Mail, Linkedin, Github } from 'lucide-react';
+import { handleExternalLink } from '../utils/security';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -27,6 +28,10 @@ const Footer: React.FC = () => {
                 href="https://linkedin.com/in/njvanas"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleExternalLink('https://linkedin.com/in/njvanas');
+                }}
                 className="p-2 bg-slate-800 hover:bg-blue-600 text-gray-400 hover:text-white rounded-lg transition-colors duration-300"
                 aria-label="LinkedIn"
               >
@@ -36,6 +41,10 @@ const Footer: React.FC = () => {
                 href="https://github.com/njvanas"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleExternalLink('https://github.com/njvanas');
+                }}
                 className="p-2 bg-slate-800 hover:bg-blue-600 text-gray-400 hover:text-white rounded-lg transition-colors duration-300"
                 aria-label="GitHub"
               >
