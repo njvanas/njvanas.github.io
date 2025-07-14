@@ -1,4 +1,8 @@
-/* Simple CSS without PostCSS/Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Keep existing custom styles */
 * {
   margin: 0;
   padding: 0;
