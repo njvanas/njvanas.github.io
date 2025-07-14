@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, MapPin, Briefcase, Heart, Book, Plane, Coffee, Code, Car, Dumbbell } from 'lucide-react';
+import { ArrowLeft, MapPin, Briefcase, Heart, Book, Plane, Server, Code, Car, Dumbbell } from 'lucide-react';
 
 function About() {
   return (
@@ -63,7 +63,7 @@ function About() {
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <Coffee className="w-6 h-6 text-blue-400 flex-shrink-0" />
+              <Server className="w-6 h-6 text-blue-400 flex-shrink-0" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-200 mb-2">IT Infrastructure & Security Specialist</h3>
                 <p className="text-gray-300">Building resilient IT systems and optimizing workflows to enhance security, scalability, and business performance.</p>
