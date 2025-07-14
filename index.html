@@ -80,13 +80,32 @@
   
   <!-- Preload critical fonts -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"></noscript>
   
-  <!-- Link to CSS -->
-  <link rel="stylesheet" href="./src/index.css">
+  <!-- Performance optimizations -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Security headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 </head>
 <body class="bg-gradient-cyber text-cyber-text custom-scrollbar">
   <div id="root"></div>
-  <!-- Link to compiled JavaScript -->
   <script type="module" src="./src/main.tsx"></script>
+  
+  <!-- Performance monitoring -->
+  <script>
+    // Basic performance monitoring
+    window.addEventListener('load', function() {
+      if ('performance' in window) {
+        const perfData = performance.getEntriesByType('navigation')[0];
+        console.log('Page load time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
+      }
+    });
+  </script>
 </body>
 </html>

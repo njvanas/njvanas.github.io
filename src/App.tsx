@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { UserCircle2, Briefcase, FolderKanban, Mail, Code, Rocket, Award, Terminal, Brain, Coffee, Shield, Lock, TrendingUp, ArrowRight, CheckCircle } from 'lucide-react';
+import { UserCircle2, Briefcase, FolderKanban, Mail, Code, Rocket, Award, Terminal, Brain, Coffee, Shield, Lock, TrendingUp, ArrowRight, CheckCircle, Zap, Target, Users } from 'lucide-react';
 import Navigation from './components/Navigation';
 import TestimonialSection from './components/TestimonialSection';
+import StatusIndicator from './components/StatusIndicator';
+import MetricCard from './components/MetricCard';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
@@ -29,14 +31,19 @@ function NavCard({
       href={href}
       onClick={handleClick}
       className="card-interactive group"
+      aria-label={`Navigate to ${title}`}
     >
-      <div className="cyber-primary mb-4 transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
+      <div className="cyber-primary mb-6 transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
         {icon}
       </div>
-      <h3 className="text-xl font-semibold cyber-text mb-2 group-hover:text-gradient transition-colors duration-300">
+      <h3 className="text-xl font-semibold cyber-text mb-3 group-hover:text-gradient transition-colors duration-300">
         {title}
       </h3>
       <p className="cyber-text-muted leading-relaxed">{description}</p>
+      <div className="mt-4 flex items-center cyber-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span className="text-sm font-medium">Explore</span>
+        <ArrowRight className="w-4 h-4 ml-2" />
+      </div>
     </a>
   );
 }
@@ -68,20 +75,19 @@ function QuickCard({
       target={external ? "_blank" : undefined}
       rel={external ? "noopener noreferrer" : undefined}
       className="group block glass rounded-lg p-6 transition-all duration-500 hover:bg-white/10 hover:scale-105 hover:shadow-2xl hover:border-cyber-primary/30"
+      aria-label={external ? `${title} (opens in new tab)` : title}
     >
       <div className="flex items-start space-x-4">
-        <div className="cyber-primary transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-12">
+        <div className="cyber-primary transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 flex-shrink-0">
           {icon}
         </div>
-        <div className="flex-1">
+        <div className="flex-1 min-w-0">
           <h4 className="text-lg font-semibold cyber-text mb-2 group-hover:text-gradient transition-colors duration-300">
             {title}
           </h4>
           <p className="cyber-text-muted text-sm leading-relaxed">{description}</p>
         </div>
-        {external && (
-          <ArrowRight className="w-4 h-4 cyber-text-muted group-hover:cyber-primary transition-colors duration-300" />
-        )}
+        <ArrowRight className="w-4 h-4 cyber-text-muted group-hover:cyber-primary transition-colors duration-300 flex-shrink-0 mt-1" />
       </div>
     </a>
   );
@@ -90,28 +96,28 @@ function QuickCard({
 function ValueProposition() {
   const values = [
     {
-      icon: <Shield className="w-6 h-6" />,
+      icon: <Shield className="w-8 h-8" />,
       title: "Security-First Approach",
-      description: "Every solution designed with cybersecurity principles at its core"
+      description: "Every solution designed with cybersecurity principles at its core, ensuring robust protection without compromising usability."
     },
     {
-      icon: <CheckCircle className="w-6 h-6" />,
+      icon: <CheckCircle className="w-8 h-8" />,
       title: "Proven Results",
-      description: "Track record of reducing security incidents by 90% and improving efficiency by 40%"
+      description: "Track record of reducing security incidents by 90% and improving operational efficiency by 40% across multiple organizations."
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
+      icon: <TrendingUp className="w-8 h-8" />,
       title: "Continuous Innovation",
-      description: "Staying ahead of emerging threats with cutting-edge identity management solutions"
+      description: "Staying ahead of emerging threats with cutting-edge identity management solutions and automated security workflows."
     }
   ];
 
   return (
     <section className="section-padding bg-cyber-light/20">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-gradient mb-6">Why Choose My Expertise</h2>
-          <p className="text-responsive-lg cyber-text-muted max-w-3xl mx-auto leading-relaxed">
+        <div className="text-center mb-20">
+          <h2 className="text-gradient mb-8">Why Choose My Expertise</h2>
+          <p className="text-responsive-lg cyber-text-muted max-w-4xl mx-auto leading-relaxed">
             Combining deep technical knowledge with practical implementation experience to deliver 
             cybersecurity solutions that protect your organization while enabling business growth.
           </p>
@@ -120,16 +126,55 @@ function ValueProposition() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {values.map((value, index) => (
             <div key={index} className="card text-center animate-slide-up" style={{ animationDelay: `${index * 0.2}s` }}>
-              <div className="cyber-primary mb-4 flex justify-center">
+              <div className="cyber-primary mb-6 flex justify-center">
                 {value.icon}
               </div>
-              <h3 className="text-xl font-semibold cyber-text mb-3">{value.title}</h3>
+              <h3 className="text-xl font-semibold cyber-text mb-4">{value.title}</h3>
               <p className="cyber-text-muted leading-relaxed">{value.description}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+function HeroMetrics() {
+  const metrics = [
+    {
+      icon: <Award className="w-6 h-6" />,
+      value: "10+",
+      label: "Years Experience",
+      description: "Decade of cybersecurity expertise"
+    },
+    {
+      icon: <Shield className="w-6 h-6" />,
+      value: "90%",
+      label: "Incident Reduction",
+      description: "Proven security improvements"
+    },
+    {
+      icon: <Users className="w-6 h-6" />,
+      value: "1000+",
+      label: "Users Secured",
+      description: "Identity management at scale"
+    },
+    {
+      icon: <Target className="w-6 h-6" />,
+      value: "40%",
+      label: "Efficiency Gain",
+      description: "Operational improvements"
+    }
+  ];
+
+  return (
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-12">
+      {metrics.map((metric, index) => (
+        <div key={index} className="animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+          <MetricCard {...metric} />
+        </div>
+      ))}
+    </div>
   );
 }
 
@@ -164,41 +209,56 @@ function App() {
       return <Insights />;
     default:
       return (
-        <div className="min-h-screen bg-gradient-cyber">
+        <div className="min-h-screen bg-gradient-hero">
           <Navigation currentPath={currentPath} />
 
           {/* Hero Section */}
           <main className="container-custom section-padding">
             <div className="text-center mb-20 animate-fade-in">
               <div className="mb-8">
-                <div className="inline-flex items-center space-x-2 glass px-4 py-2 rounded-full mb-6">
-                  <div className="w-2 h-2 bg-cyber-success rounded-full animate-pulse"></div>
-                  <span className="text-sm cyber-text-muted font-medium">Available for new opportunities</span>
-                </div>
+                <StatusIndicator status="available" className="mb-8" />
                 
-                <h1 className="text-gradient mb-6 animate-slide-up">
+                <h1 className="text-gradient mb-8 animate-slide-up">
                   Cybersecurity & Identity Management Expert
                 </h1>
                 
-                <p className="text-responsive-xl cyber-text-muted max-w-4xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
-                  Driven IT professional with <strong className="cyber-primary">more than a decade of experience</strong> in 
-                  managing complex IT infrastructures and enhancing security protocols. Specializing in identity and access 
-                  management, hybrid cloud environments, and workflow optimization to deliver secure, scalable, and efficient 
-                  solutions that meet evolving business needs.
-                </p>
+                <div className="max-w-5xl mx-auto mb-8">
+                  <p className="text-responsive-xl cyber-text-muted leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
+                    Driven IT professional with <strong className="cyber-primary">more than a decade of experience</strong> in 
+                    managing complex IT infrastructures and enhancing security protocols. Specializing in identity and access 
+                    management, hybrid cloud environments, and workflow optimization to deliver secure, scalable, and efficient 
+                    solutions that meet evolving business needs.
+                  </p>
+                </div>
+
+                {/* Unique Value Proposition */}
+                <div className="glass-strong rounded-2xl p-8 max-w-4xl mx-auto mb-12 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+                  <h2 className="text-2xl font-bold cyber-primary mb-4">
+                    "Cybersecurity Specialist with Proven Results in Identity & Access Management"
+                  </h2>
+                  <p className="cyber-text-muted leading-relaxed">
+                    I transform cybersecurity from a business constraint into a competitive advantage, 
+                    delivering solutions that protect without hindering productivity.
+                  </p>
+                </div>
+
+                {/* Hero Metrics */}
+                <HeroMetrics />
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
                 <button 
                   onClick={() => window.location.hash = 'projects'}
                   className="btn-primary"
                 >
+                  <Zap className="w-5 h-5 mr-2" />
                   View My Work
                 </button>
                 <button 
                   onClick={() => window.location.hash = 'contact'}
                   className="btn-secondary"
                 >
+                  <Mail className="w-5 h-5 mr-2" />
                   Get In Touch
                 </button>
               </div>
@@ -210,7 +270,7 @@ function App() {
                 <NavCard
                   icon={<UserCircle2 className="w-8 h-8" />}
                   title="About Me"
-                  description="Journey, values, and professional philosophy in cybersecurity"
+                  description="Journey, values, and professional philosophy in cybersecurity and identity management"
                   href="#/about"
                 />
               </div>
@@ -218,7 +278,7 @@ function App() {
                 <NavCard
                   icon={<FolderKanban className="w-8 h-8" />}
                   title="Projects"
-                  description="Showcase of impactful technical work and security solutions"
+                  description="Showcase of impactful technical work and comprehensive security solutions"
                   href="#/projects"
                 />
               </div>
@@ -226,7 +286,7 @@ function App() {
                 <NavCard
                   icon={<Briefcase className="w-8 h-8" />}
                   title="Experience"
-                  description="Professional growth and achievements in IT security"
+                  description="Professional growth and quantifiable achievements in IT security"
                   href="#/experience"
                 />
               </div>
@@ -234,7 +294,7 @@ function App() {
                 <NavCard
                   icon={<Mail className="w-8 h-8" />}
                   title="Contact Me"
-                  description="Let's connect and collaborate on security initiatives"
+                  description="Let's connect and collaborate on cybersecurity initiatives"
                   href="#/contact"
                 />
               </div>
@@ -243,23 +303,23 @@ function App() {
             {/* Value Proposition */}
             <ValueProposition />
 
-            {/* Quick Access Section */}
+            {/* Featured Highlights Section */}
             <div className="section-padding">
               <h2 className="text-3xl font-bold cyber-text text-center mb-16">
                 Featured Highlights
               </h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                 {/* Projects Quick Access */}
-                <div className="space-y-6">
+                <div className="space-y-8">
                   <h3 className="text-2xl font-semibold cyber-text mb-8 flex items-center">
                     <Code className="w-6 h-6 mr-3 cyber-primary" />
                     Featured Projects
                   </h3>
-                  <div className="space-y-4">
+                  <div className="space-y-6">
                     <QuickCard
                       icon={<Brain className="w-6 h-6" />}
-                      title="This Portfolio Website"
-                      description="Modern React-based portfolio showcasing cybersecurity expertise with responsive design and accessibility features"
+                      title="Access Management Pro"
+                      description="Enterprise-grade solution for managing access requests with comprehensive audit trails and automated workflows"
                       href="#/projects"
                     />
                     <QuickCard
@@ -279,12 +339,12 @@ function App() {
                 </div>
 
                 {/* Experience Quick Access */}
-                <div className="space-y-6">
+                <div className="space-y-8">
                   <h3 className="text-2xl font-semibold cyber-text mb-8 flex items-center">
                     <Award className="w-6 h-6 mr-3 cyber-primary" />
                     Key Experience
                   </h3>
-                  <div className="space-y-4">
+                  <div className="space-y-6">
                     <QuickCard
                       icon={<Shield className="w-6 h-6" />}
                       title="Workspace Administrator"
@@ -313,23 +373,26 @@ function App() {
 
             {/* Call to Action */}
             <div className="text-center section-padding">
-              <div className="glass rounded-2xl p-12 animate-fade-in">
+              <div className="glass-strong rounded-2xl p-12 animate-fade-in">
                 <h2 className="text-3xl font-bold cyber-text mb-6">Ready to Enhance Your Security Posture?</h2>
-                <p className="text-xl cyber-text-muted mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl cyber-text-muted mb-8 max-w-4xl mx-auto leading-relaxed">
                   Let's discuss how my expertise in cybersecurity and identity management can help protect 
-                  and optimize your organization's IT infrastructure.
+                  and optimize your organization's IT infrastructure. Together, we can build security solutions 
+                  that enable growth while maintaining the highest protection standards.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-6 justify-center">
                   <button 
                     onClick={() => window.location.hash = 'contact'}
                     className="btn-primary"
                   >
+                    <Mail className="w-5 h-5 mr-2" />
                     Start a Conversation
                   </button>
                   <button 
                     onClick={() => window.location.hash = 'insights'}
                     className="btn-secondary"
                   >
+                    <Brain className="w-5 h-5 mr-2" />
                     Read My Insights
                   </button>
                 </div>
