@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, MapPin, Briefcase, Heart, Book, Plane, Coffee, Code } from 'lucide-react';
+import { ArrowLeft, MapPin, Briefcase, Heart, Book, Plane, Coffee, Code, Car, Dumbbell } from 'lucide-react';
 
 function About() {
   return (
