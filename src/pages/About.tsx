@@ -85,7 +85,7 @@ function About() {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <Heart className="w-6 h-6 text-blue-400 flex-shrink-0" />
+                <Car className="w-6 h-6 text-blue-400 flex-shrink-0" />
                 <div>
                   <h3 className="text-lg font-semibold text-gray-200 mb-2">Car Enthusiast</h3>
                   <p className="text-gray-300">Fueling my love for speed and precision through drifting and exploring the art of performance tuning and vehicle dynamics.</p>
@@ -94,14 +94,14 @@ function About() {
             </div>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <Plane className="w-6 h-6 text-blue-400 flex-shrink-0" />
+                <Heart className="w-6 h-6 text-blue-400 flex-shrink-0" />
                 <div>
                   <h3 className="text-lg font-semibold text-gray-200 mb-2">Devoted Beekeeper</h3>
                   <p className="text-gray-300">Combining patience and care to nurture thriving hives, while fostering a deep appreciation for the vital role bees play in our ecosystem.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <Coffee className="w-6 h-6 text-blue-400 flex-shrink-0" />
+                <Dumbbell className="w-6 h-6 text-blue-400 flex-shrink-0" />
                 <div>
                   <h3 className="text-lg font-semibold text-gray-200 mb-2">Fitness Enthusiast</h3>
                   <p className="text-gray-300">Committed to building strength and resilience, embracing challenges, and striving for continuous personal growth through consistent training</p>
