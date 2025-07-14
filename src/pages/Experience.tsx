@@ -53,9 +53,21 @@ function ExperienceCard({
 function Experience() {
   const experiences = [
     {
+      company: "Quion Groep",
+      position: "Workspace Administrator",
+      period: "June 2025 - Present",
+      location: "Rotterdam, Netherlands",
+      description: "Designed and implemented secure Azure-based identity & access solutions while driving cloud-first initiatives.",
+      achievements: [
+        "Designed and implemented secure Azure-based identity & access solutions (AAD, Conditional Access, MFA), ensuring compliance and protecting hybrid environments.",
+        "Automated administrative tasks with PowerShell & Graph API, streamlined device management using Intune & Autopilot, reducing manual workload and boosting efficiency.",
+        "Collaborated across DevOps, Security, and Infrastructure teams to enforce governance, optimize performance, and drive cloud-first, policy-driven IT initiatives."
+      ]
+    },
+    {
        company: "Quion Groep",
     position: "User Authentication and Authorization Specialist",
-    period: "June 2024 - Present",
+    period: "June 2024 - May 2025",
     location: "Rotterdam, Netherlands",
     description: "Implemented and managed secure authentication systems while ensuring regulatory compliance.",
     achievements: [
