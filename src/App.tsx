@@ -195,12 +195,6 @@ function App() {
                   </h3>
                   <div className="grid gap-4">
                     <QuickCard
-                      icon={<Rocket className="w-6 h-6" />}
-                      title="Maintenance Tool"
-                      description="Built with Python"
-                      href="#/projects"
-                    />
-                    <QuickCard
                       icon={<Brain className="w-6 h-6" />}
                       title="This Website"
                       description="Static Front-End website"
@@ -211,6 +205,12 @@ function App() {
                       title="Auto Office Install Tool"
                       description="Automated Microsoft Office deployment"
                       href="https://njvanas.github.io/Office-Auto-Install/"
+                    />
+                    <QuickCard
+                      icon={<Rocket className="w-6 h-6" />}
+                      title="Maintenance Tool"
+                      description="Built with Python"
+                      href="#/projects"
                     />
                   </div>
                 </div>
@@ -223,6 +223,12 @@ function App() {
                   </h3>
                   <div className="grid gap-4">
                     <QuickCard
+                      icon={<Award className="w-6 h-6" />}
+                      title="IT Coordinator/Manager"
+                      description="Managed IT operations, budgets, and hybrid environments at Unique Hydra & Gist"
+                      href="#/experience"
+                    />
+                    <QuickCard
                       icon={<Terminal className="w-6 h-6" />}
                       title="User Authentication and Authorization Specialist"
                       description="Authentication and Authorization Specialist at Quion"
@@ -232,12 +238,6 @@ function App() {
                       icon={<Coffee className="w-6 h-6" />}
                       title="Startup Founder"
                       description="E-commerce business that operated on Wordpress, C-Panel & Shopify."
-                      href="#/experience"
-                    />
-                    <QuickCard
-                      icon={<Award className="w-6 h-6" />}
-                      title="IT Coordinator/Manager"
-                      description="Managed IT operations, budgets, and hybrid environments at Unique Hydra & Gist"
                       href="#/experience"
                     />
                   </div>
