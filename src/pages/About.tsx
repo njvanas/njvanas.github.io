@@ -30,7 +30,7 @@ function About() {
             </span>
             <span className="flex items-center">
               <Briefcase className="w-4 h-4 mr-2" />
-              User Authentication & Authorization Specialist
+              Workspace Administrator
             </span>
           </div>
         </div>
