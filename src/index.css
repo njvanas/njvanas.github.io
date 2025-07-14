@@ -444,6 +444,6 @@
 /* Dark mode enhancements */
 @media (prefers-color-scheme: dark) {
   .glass {
-    @apply bg-white/3 border-white/8;
+    @apply bg-white/5 border-white/10;
   }
 }
