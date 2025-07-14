@@ -23,9 +23,12 @@ This portfolio serves as a comprehensive showcase of my:
 ## 🎯 What You'll Find
 
 ### 💼 Professional Experience
-- **8+ years** in IT infrastructure and cybersecurity
+- **More than a decade** in IT infrastructure and cybersecurity
+- **Current Role:** Workspace Administrator at Quion Groep (June 2025 - Present)
+- **Previous Roles:** User Authentication & Authorization Specialist, IT Servicedesk, IT Coordinator/Manager
 - Specialization in **Azure identity solutions** and **access management**
 - Experience with **hybrid cloud environments** and **compliance frameworks**
+- Expertise in **PowerShell automation**, **Intune & Autopilot**, and **Conditional Access**
 
 ### 🔧 Featured Projects
 - **Maintenance Tool** - Python-based system optimization utility
