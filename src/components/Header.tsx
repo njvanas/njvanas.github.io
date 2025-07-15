@@ -59,7 +59,7 @@ const Header: React.FC = () => {
                   {item.label}
                 </a>
                 {item.subItems && (
-                  <div className="absolute left-0 mt-2 hidden group-hover:block bg-slate-800 rounded shadow-lg">
+                  <div className="absolute left-0 top-full hidden group-hover:block bg-slate-800 rounded shadow-lg">
                     {item.subItems.map((sub) => (
                       <a
                         key={sub.href}
