@@ -1,6 +1,7 @@
 import React from 'react';
 import { ExternalLink, Github, Code, Wrench, Globe, Zap, ChefHat, Download } from 'lucide-react';
 import { handleExternalLink } from '../utils/security';
+import { slugify } from '../utils/slug';
 
 interface Project {
   title: string;
@@ -113,19 +114,33 @@ const Projects: React.FC = () => {
               Featured Projects
             </h2>
             <div className="w-24 h-1 bg-blue-500 mx-auto mb-8"></div>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              A showcase of my technical projects demonstrating expertise in cybersecurity, 
-              automation, and modern web development.
-            </p>
-          </div>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            A showcase of my technical projects demonstrating expertise in cybersecurity,
+            automation, and modern web development.
+          </p>
+        </div>
 
-          {/* Projects Grid */}
+        {/* Quick Links */}
+        <div className="mb-8 flex flex-wrap gap-3 text-sm">
+          {projects.map((project, index) => (
+            <a
+              key={index}
+              href={`#${slugify(project.title)}`}
+              className="text-blue-400 hover:underline"
+            >
+              {project.title}
+            </a>
+          ))}
+        </div>
+
+        {/* Projects Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-slate-900/50 rounded-lg p-6 hover:bg-slate-900/70 transition-all duration-300 border border-slate-700/50 hover:border-blue-500/50 group"
-              >
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              id={slugify(project.title)}
+              className="bg-slate-900/50 rounded-lg p-6 hover:bg-slate-900/70 transition-all duration-300 border border-slate-700/50 hover:border-blue-500/50 group"
+            >
                 {/* Project Icon & Category */}
                 <div className="flex items-center justify-between mb-4">
                   <div className="p-3 bg-blue-600/20 rounded-lg text-blue-400 group-hover:bg-blue-600/30 transition-colors duration-300">
