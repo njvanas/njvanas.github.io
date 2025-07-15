@@ -1,4 +1,5 @@
 import React from 'react';
+import { slugify } from '../utils/slug';
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
 
 interface ExperienceItem {
@@ -129,18 +130,31 @@ const Experience: React.FC = () => {
               Professional Experience
             </h2>
             <div className="w-24 h-1 bg-blue-500 mx-auto mb-8"></div>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Over a decade of experience in cybersecurity and IT infrastructure across multiple continents.
-            </p>
-          </div>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Over a decade of experience in cybersecurity and IT infrastructure across multiple continents.
+          </p>
+        </div>
 
-          {/* Timeline */}
+        {/* Quick Links */}
+        <div className="mb-8 flex flex-wrap gap-3 text-sm">
+          {experiences.map((exp, index) => (
+            <a
+              key={index}
+              href={`#${slugify(exp.title)}`}
+              className="text-blue-400 hover:underline"
+            >
+              {exp.company}
+            </a>
+          ))}
+        </div>
+
+        {/* Timeline */}
           <div className="relative">
             {/* Timeline Line */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-500/30 hidden md:block"></div>
 
             {experiences.map((exp, index) => (
-              <div key={index} className="relative mb-12 md:ml-16">
+              <div key={index} id={slugify(exp.title)} className="relative mb-12 md:ml-16">
                 {/* Timeline Dot */}
                 <div className="absolute -left-20 top-6 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-900 hidden md:block"></div>
                 
