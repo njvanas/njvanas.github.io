@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import experiences from '../data/experiences';
+import projects from '../data/projects';
+import { slugify } from '../utils/slug';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +19,22 @@ const Header: React.FC = () => {
 
   const navItems = [
     { href: '#about', label: 'About' },
-    { href: '#experience', label: 'Experience' },
-    { href: '#projects', label: 'Projects' },
+    {
+      href: '#experience',
+      label: 'Experience',
+      subItems: experiences.map((exp) => ({
+        href: `#${slugify(exp.title)}`,
+        label: exp.title,
+      })),
+    },
+    {
+      href: '#projects',
+      label: 'Projects',
+      subItems: projects.map((proj) => ({
+        href: `#${slugify(proj.title)}`,
+        label: proj.title,
+      })),
+    },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -34,13 +51,27 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
-              >
-                {item.label}
-              </a>
+              <div key={item.href} className="relative group">
+                <a
+                  href={item.href}
+                  className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+                >
+                  {item.label}
+                </a>
+                {item.subItems && (
+                  <div className="absolute left-0 mt-2 hidden group-hover:block bg-slate-800 rounded shadow-lg">
+                    {item.subItems.map((sub) => (
+                      <a
+                        key={sub.href}
+                        href={sub.href}
+                        className="block px-4 py-2 text-gray-300 hover:bg-slate-700 hover:text-white whitespace-nowrap"
+                      >
+                        {sub.label}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
 
@@ -59,14 +90,29 @@ const Header: React.FC = () => {
           <div className="md:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
+                <div key={item.href} className="flex flex-col">
+                  <a
+                    href={item.href}
+                    className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                  {item.subItems && (
+                    <div className="flex flex-col ml-4 mt-2 space-y-2">
+                      {item.subItems.map((sub) => (
+                        <a
+                          key={sub.href}
+                          href={sub.href}
+                          className="text-gray-400 hover:text-white text-sm"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {sub.label}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           </div>
