@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import References from './components/References';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -17,7 +16,6 @@ function App() {
         <About />
         <Experience />
         <Projects />
-        <References />
         <Contact />
       </main>
       <Footer />
