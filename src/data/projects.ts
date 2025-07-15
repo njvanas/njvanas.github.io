@@ -1,11 +1,11 @@
-import React from 'react';
-import { ExternalLink, Github, Code, Wrench, Globe, Zap, ChefHat, Download } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+import { Code, Wrench, Globe, Zap, ChefHat, Download } from 'lucide-react';
 
 export interface Project {
   title: string;
   description: string;
   technologies: string[];
-  icon: React.ReactNode;
+  icon: LucideIcon;
   category: string;
   highlights: string[];
   liveUrl?: string;
@@ -17,7 +17,7 @@ export const projects: Project[] = [
     title: "Maintenance Tool",
     description: "All-in-one maintenance utility for routine scripts and performance optimization",
     technologies: ["PowerShell", "Windows", "Automation", "System Administration"],
-    icon: <Wrench className="w-8 h-8" />,
+    icon: Wrench,
     category: "System Administration",
     liveUrl: "https://njvanas.github.io/AIO-Maintenance/",
     githubUrl: "https://github.com/njvanas/AIO-Maintenance",
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     title: "Office Auto Install Tool",
     description: "Automated Microsoft Office installation and configuration utility",
     technologies: ["PowerShell", "Windows", "Microsoft Office", "Automation"],
-    icon: <Download className="w-8 h-8" />,
+    icon: Download,
     category: "System Administration",
     liveUrl: "https://njvanas.github.io/Office-Auto-Install/",
     githubUrl: "https://github.com/njvanas/Office-Auto-Install",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     title: "Personal Portfolio Website",
     description: "Modern, responsive portfolio showcasing technical skills and professional experience",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    icon: <Globe className="w-8 h-8" />,
+    icon: Globe,
     category: "Web Development",
     liveUrl: "https://njvanas.github.io",
     githubUrl: "https://github.com/njvanas/njvanas.github.io",
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     title: "Access Management Tool",
     description: "Comprehensive solution for managing access requests to IT systems",
     technologies: ["Azure AD", "PowerShell", "Identity Management", "Automation"],
-    icon: <Code className="w-8 h-8" />,
+    icon: Code,
     category: "Identity & Access Management",
     highlights: [
       "Streamlined access request workflows",
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     title: "Typing Speed Test",
     description: "Interactive web application to test typing skills and measure WPM",
     technologies: ["JavaScript", "HTML5", "CSS3", "Web APIs"],
-    icon: <Zap className="w-8 h-8" />,
+    icon: Zap,
     category: "Web Application",
     liveUrl: "https://njvanas.github.io/typing-speed-test/",
     githubUrl: "https://github.com/njvanas/typing-speed-test",
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     title: "Recipe Tool",
     description: "All-in-one recipe utility for bodybuilders and fitness enthusiasts",
     technologies: ["Web Technologies", "Nutrition APIs", "Database", "UI/UX"],
-    icon: <ChefHat className="w-8 h-8" />,
+    icon: ChefHat,
     category: "Health & Fitness",
     highlights: [
       "Nutritional information tracking",
