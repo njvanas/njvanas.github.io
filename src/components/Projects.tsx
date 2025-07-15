@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
                 {/* Project Icon & Category */}
                 <div className="flex items-center justify-between mb-4">
                   <div className="p-3 bg-blue-600/20 rounded-lg text-blue-400 group-hover:bg-blue-600/30 transition-colors duration-300">
-                    {project.icon}
+                    {React.createElement(project.icon, { className: 'w-8 h-8' })}
                   </div>
                   <span className="text-xs text-gray-400 bg-slate-800/50 px-2 py-1 rounded">
                     {project.category}
