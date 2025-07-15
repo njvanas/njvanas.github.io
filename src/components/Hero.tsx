@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
           
           {/* Subtitle */}
           <h2 className="text-2xl md:text-3xl text-blue-300 mb-8 font-light">
-            Cybersecurity & IT Infrastructure Specialist
+            Identity & Access Management, Security & Infrastructure Specialist
           </h2>
           
           {/* Description */}

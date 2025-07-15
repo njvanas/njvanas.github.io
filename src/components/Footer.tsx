@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">NJ van As</h3>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              Cybersecurity & IT Infrastructure Specialist passionate about 
+              Identity & Access Management, Security & Infrastructure Specialist passionate about
               securing digital environments and enabling technological innovation.
             </p>
             <div className="flex space-x-4">

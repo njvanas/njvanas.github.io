@@ -1,6 +1,6 @@
 # 🚀 NJ van As - Personal Portfolio
 
-> **Cybersecurity & IT Infrastructure Specialist | Identity & Access Management Expert**
+> **Identity & Access Management, Security & Infrastructure Specialist**
 
 Welcome to my personal portfolio website! This is where I showcase my professional journey, technical projects, and expertise in cybersecurity and IT infrastructure.
 
