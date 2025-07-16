@@ -27,8 +27,9 @@ const Hero: React.FC = () => {
           
           {/* Description */}
           <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Identity & Access Management Expert with over a decade of experience 
-            securing digital infrastructures and empowering organizations through technology.
+            Technology professional with more than a decade of experience across
+            identity, security and infrastructure, securing digital environments
+            and empowering organizations through technology.
           </p>
 
           {/* Key Skills Icons */}
