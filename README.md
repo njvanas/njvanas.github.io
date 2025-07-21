@@ -34,7 +34,7 @@ This portfolio serves as a comprehensive showcase of my:
 - **This Website** - Personal portfolio showcasing versatility with modern web technologies
 - **Access Management Tool** - Comprehensive solution for managing access requests to IT systems
 - **Typing Speed Test** - Fun web application to test typing skills and WPM
-- **Recipe Tool** - All-in-one recipe utility for bodybuilders and fitness enthusiasts
+ - **GymBroRecipes** - High-protein recipe and meal planning app for gym enthusiasts
 
 ### 🌍 Current Focus
 - **User Authentication & Authorization** at Quion Groep

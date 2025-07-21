@@ -87,11 +87,13 @@ export const projects: Project[] = [
     ]
   },
   {
-    title: "Recipe Tool",
-    description: "All-in-one recipe utility for bodybuilders and fitness enthusiasts",
-    technologies: ["Web Technologies", "Nutrition APIs", "Database", "UI/UX"],
+    title: "GymBroRecipes",
+    description: "High-protein recipe and meal planning app for gym enthusiasts",
+    technologies: ["TypeScript", "React", "Tailwind CSS", "Nutrition APIs"],
     icon: ChefHat,
     category: "Health & Fitness",
+    liveUrl: "https://njvanas.github.io/GymBroRecipes/",
+    githubUrl: "https://github.com/njvanas/GymBroRecipes",
     highlights: [
       "Nutritional information tracking",
       "Macro calculator for fitness goals",
