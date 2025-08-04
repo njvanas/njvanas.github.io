@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Code, Wrench, Globe, Zap, ChefHat, Download } from 'lucide-react';
+import { Code, Wrench, Globe, Zap, ChefHat, Download, BookOpen } from 'lucide-react';
 
 export interface Project {
   title: string;
@@ -13,6 +13,21 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    title: "Personal Blog",
+    description: "Technical blog sharing insights on cybersecurity, IT infrastructure, and professional development",
+    technologies: ["HTML5", "CSS3", "JavaScript", "GitHub Pages", "Responsive Design"],
+    icon: BookOpen,
+    category: "Content & Writing",
+    liveUrl: "https://njvanas.github.io/Blog/",
+    githubUrl: "https://github.com/njvanas/Blog",
+    highlights: [
+      "Technical articles on cybersecurity topics",
+      "Professional insights and career guidance",
+      "Clean, readable blog layout design",
+      "SEO optimized content structure"
+    ]
+  },
   {
     title: "Maintenance Tool",
     description: "All-in-one maintenance utility for routine scripts and performance optimization",
