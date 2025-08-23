@@ -107,7 +107,7 @@ export const projects: Project[] = [
     technologies: ["TypeScript", "React", "Tailwind CSS", "Nutrition APIs"],
     icon: ChefHat,
     category: "Health & Fitness",
-    liveUrl: "https://njvanas.github.io/GymBroRecipes/",
+    liveUrl: "https://gymbrorecipes.netlify.app/",
     githubUrl: "https://github.com/njvanas/GymBroRecipes",
     highlights: [
       "Nutritional information tracking",
