@@ -1,8 +1,8 @@
 # 🚀 NJ van As - Personal Portfolio
 
-> **Identity & Access Management, Security & Infrastructure Specialist**
+> **Senior Cloud & Microsoft 365 Engineer · Security & Infrastructure at Scale**
 
-Welcome to my personal portfolio website! This is where I showcase my professional journey, technical projects, and expertise in cybersecurity and IT infrastructure.
+Welcome to my personal portfolio website! This is where I showcase my professional journey, technical projects, and expertise in cloud infrastructure, Microsoft 365, and cybersecurity.
 
 ## 🌟 About This Site
 
@@ -37,9 +37,9 @@ This portfolio serves as a comprehensive showcase of my:
  - **GymBroRecipes** - High-protein recipe and meal planning app for gym enthusiasts
 
 ### 🌍 Current Focus
-- **User Authentication & Authorization** at Quion Groep
-- **Azure cloud solutions** and **identity management**
-- **DevOps collaboration** and **security governance**
+- **Microsoft 365 & Azure** at DeLorentz & Partners (60+ organizations, 40+ tenants)
+- **Identity, security & automation**—Entra ID, Conditional Access, threat detection
+- **Third-line expert** on migrations, hardening, and scalable cloud infrastructure
 
 ## 🚀 Live Site
 
@@ -56,7 +56,7 @@ This portfolio serves as a comprehensive showcase of my:
 
 - **LinkedIn:** [njvanas](https://linkedin.com/in/njvanas)
 - **Email:** njvanas@duck.com
-- **Location:** Rotterdam, Netherlands
+- **Location:** Hilversum, Netherlands
 
 ---
 

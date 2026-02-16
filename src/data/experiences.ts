@@ -15,10 +15,10 @@ export const experiences: ExperienceItem[] = [
     period: "Dec 2025 - Present",
     current: true,
     description: [
-      "Design and implement M365 and Azure solutions for 60+ organizations; identity and access with Entra ID, Conditional Access, and Microsoft Defender for Business",
-      "Lead migration, onboarding, and optimization; resolve complex incidents as third-line expert for multiple clients",
-      "Develop security strategies: threat detection, incident response, hardening, and audits; automate with PowerShell, scripting, and AI tooling",
-      "Manage 40+ tenants across M365 and Azure stack, including AVD, Workspace One, and hosted environments; advise on IT strategy and integrate Datto, Barracuda, Veeam, and others"
+      "Design and implement M365 and Azure solutions for 60+ organizations",
+      "Identity and access with Entra ID, Conditional Access, and Microsoft Defender",
+      "Lead migrations and optimization; third-line expert for complex incidents",
+      "Automate operations with PowerShell and AI tooling; manage 40+ tenants"
     ]
   },
   {

@@ -22,14 +22,13 @@ const Hero: React.FC = () => {
           
           {/* Subtitle */}
           <h2 className="text-2xl md:text-3xl text-blue-300 mb-8 font-light">
-            Identity & Access Management, Security & Infrastructure Specialist
+            Senior Cloud & Microsoft 365 Engineer · Security & Infrastructure at Scale
           </h2>
           
           {/* Description */}
           <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Technology professional with more than a decade of experience across
-            identity, security and infrastructure, securing digital environments
-            and empowering organizations through technology.
+            Architecting and securing Microsoft 365 and Azure for 60+ organizations—identity, 
+            automation, and threat defense—with a decade of experience from support to third-line expert.
           </p>
 
           {/* Key Skills Icons */}
@@ -50,7 +49,7 @@ const Hero: React.FC = () => {
               <div className="p-4 bg-green-600/20 rounded-full group-hover:bg-green-600/30 transition-colors duration-300">
                 <Users className="w-8 h-8 text-green-400" />
               </div>
-              <span className="text-sm text-gray-400 mt-2">Identity & Access</span>
+              <span className="text-sm text-gray-400 mt-2">Cloud & M365</span>
             </div>
           </div>
 
