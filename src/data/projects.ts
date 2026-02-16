@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Code, Wrench, Globe, Zap, ChefHat, Download, BookOpen } from 'lucide-react';
+import { Code, Wrench, Globe, Zap, ChefHat, Download, BookOpen, BookMarked } from 'lucide-react';
 
 export interface Project {
   title: string;
@@ -103,17 +103,31 @@ export const projects: Project[] = [
   },
   {
     title: "GymBroRecipes",
-    description: "High-protein recipe and meal planning app for gym enthusiasts",
+    description: "Nutrition tracking tool for logging meals, macros, and hitting fitness goals",
     technologies: ["TypeScript", "React", "Tailwind CSS", "Nutrition APIs"],
     icon: ChefHat,
     category: "Health & Fitness",
     liveUrl: "https://gymbrorecipes.netlify.app/",
     githubUrl: "https://github.com/njvanas/GymBroRecipes",
     highlights: [
-      "Nutritional information tracking",
-      "Macro calculator for fitness goals",
-      "Recipe storage and organization",
-      "Meal planning functionality"
+      "Daily nutrition and macro tracking",
+      "Meal and calorie logging",
+      "Recipe storage and quick add",
+      "Progress toward bulking, cutting, or maintaining"
+    ]
+  },
+  {
+    title: "Gym Bro Recipes – Knowledge Base",
+    description: "Informational resource on bodybuilding training phases: maintaining, cutting, and bulking",
+    technologies: ["HTML5", "CSS3", "JavaScript", "GitHub Pages"],
+    icon: BookMarked,
+    category: "Content & Writing",
+    githubUrl: "https://github.com/njvanas/Gym-Bro-Recipes",
+    highlights: [
+      "Educational content on maintaining, cutting, and bulking",
+      "Clean, responsive layout with smooth navigation",
+      "Disclaimer-backed informational focus",
+      "No CTAs or social—purely reference material"
     ]
   }
 ];
