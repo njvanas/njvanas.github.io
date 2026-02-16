@@ -23,8 +23,8 @@ This portfolio serves as a comprehensive showcase of my:
 
 ### 💼 Professional Experience
 - **More than a decade** in IT infrastructure and cybersecurity
-- **Current Role:** Workspace Administrator at Quion Groep (June 2025 - Present)
-- **Previous Roles:** User Authentication & Authorization Specialist, IT Servicedesk, IT Coordinator/Manager
+- **Current Role:** Senior Cloud/Microsoft 365 Engineer at DeLorentz & Partners (Dec 2025 - Present)
+- **Previous Roles:** Workspace Administrator, User Authentication & Authorization Specialist, IT Servicedesk, IT Coordinator/Manager
 - Specialization in **Azure identity solutions** and **access management**
 - Experience with **hybrid cloud environments** and **compliance frameworks**
 - Expertise in **PowerShell automation**, **Intune & Autopilot**, and **Conditional Access**

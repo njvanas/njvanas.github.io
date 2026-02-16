@@ -135,8 +135,8 @@ const Contact: React.FC = () => {
               <div className="mt-8 p-6 bg-slate-800/50 rounded-lg border border-slate-700/50">
                 <h4 className="text-white font-semibold mb-3">Current Focus</h4>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  I'm currently working as a Workspace Administrator at Quion Groep, 
-                  specializing in Azure identity solutions and access management. 
+                  I'm currently working as a Senior Cloud/Microsoft 365 Engineer at DeLorentz & Partners, 
+                  specializing in M365 and Azure solutions, identity and access management, and security. 
                   Always open to discussing cybersecurity challenges and innovative solutions.
                 </p>
               </div>

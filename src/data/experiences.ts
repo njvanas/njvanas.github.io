@@ -9,11 +9,23 @@ export interface ExperienceItem {
 
 export const experiences: ExperienceItem[] = [
   {
+    title: "Senior Cloud/Microsoft 365 Engineer",
+    company: "DeLorentz & Partners",
+    location: "Hilversum, Netherlands",
+    period: "Dec 2025 - Present",
+    current: true,
+    description: [
+      "Design and implement M365 and Azure solutions for 60+ organizations; identity and access with Entra ID, Conditional Access, and Microsoft Defender for Business",
+      "Lead migration, onboarding, and optimization; resolve complex incidents as third-line expert for multiple clients",
+      "Develop security strategies: threat detection, incident response, hardening, and audits; automate with PowerShell, scripting, and AI tooling",
+      "Manage 40+ tenants across M365 and Azure stack, including AVD, Workspace One, and hosted environments; advise on IT strategy and integrate Datto, Barracuda, Veeam, and others"
+    ]
+  },
+  {
     title: "Workspace Administrator",
     company: "Quion Groep",
     location: "Rotterdam, Netherlands",
-    period: "Jun 2025 - Present",
-    current: true,
+    period: "Jun 2025 - Nov 2025",
     description: [
       "Manage modern workspaces with M365 and Azure",
       "Automate tasks using PowerShell and Graph API",
