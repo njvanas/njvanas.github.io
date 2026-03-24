@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Code, Wrench, Globe, Zap, ChefHat, Download, BookOpen, BookMarked } from 'lucide-react';
+import { Code, Wrench, Globe, Zap, ChefHat, Download, BookOpen, BookMarked, GitBranch } from 'lucide-react';
 
 export interface Project {
   title: string;
@@ -71,6 +71,22 @@ export const projects: Project[] = [
       "TypeScript for type safety",
       "Optimized performance with Vite",
       "Deployed on GitHub Pages"
+    ]
+  },
+  {
+    title: "CI/CD Demo",
+    description:
+      "Companion demo that visualizes how commits flow through GitHub Actions to a live GitHub Pages site",
+    technologies: ["GitHub Actions", "GitHub Pages", "CI/CD", "HTML", "CSS", "JavaScript"],
+    icon: GitBranch,
+    category: "DevOps",
+    liveUrl: "https://njvanas.github.io/CI-CD/",
+    githubUrl: "https://github.com/njvanas/CI-CD",
+    highlights: [
+      "Pipeline visualization from code commit to deployment",
+      "Automated build and deploy on push to main",
+      "Hands-on illustration of GitHub Actions workflows",
+      "Dedicated repo deployed to GitHub Pages via Actions"
     ]
   },
   {
