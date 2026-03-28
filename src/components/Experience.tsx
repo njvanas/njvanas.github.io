@@ -5,7 +5,7 @@ import experiences, { ExperienceItem } from '../data/experiences';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-20 bg-slate-900/50">
+    <section id="experience" className="scroll-mt-24 py-20 bg-slate-900/50">
       <div className="container w-full mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}

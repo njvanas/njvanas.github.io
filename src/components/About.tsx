@@ -3,7 +3,7 @@ import { MapPin, Calendar, Award, Globe } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-slate-800/50">
+    <section id="about" className="scroll-mt-24 py-20 bg-slate-800/50">
       <div className="container w-full mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}

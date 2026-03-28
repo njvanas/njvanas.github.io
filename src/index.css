@@ -7,12 +7,7 @@
   --font-sans: 'Inter', system-ui, sans-serif;
 }
 
-/* Custom styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Avoid unlayered * { margin/padding: 0 } — it overrides @layer utilities in Tailwind v4. */
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;

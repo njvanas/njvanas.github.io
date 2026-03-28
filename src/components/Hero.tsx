@@ -3,7 +3,7 @@ import { ArrowDown, Shield, Server, Users } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center relative overflow-hidden">
+    <section className="min-h-screen flex flex-col justify-center relative overflow-hidden pt-24 md:pt-28">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-linear-to-r from-blue-600/20 to-purple-600/20"></div>

@@ -7,7 +7,7 @@ import projects, { Project } from '../data/projects';
 const Projects: React.FC = () => {
 
   return (
-    <section id="projects" className="py-20 bg-slate-800/50">
+    <section id="projects" className="scroll-mt-24 py-20 bg-slate-800/50">
       <div className="container w-full mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
