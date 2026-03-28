@@ -9,9 +9,9 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-900 via-blue-900 to-slate-900">
+    <div className="min-h-screen w-full bg-linear-to-br from-slate-900 via-blue-900 to-slate-900">
       <Header />
-      <main>
+      <main className="w-full">
         <Hero />
         <About />
         <Experience />

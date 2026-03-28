@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-slate-900 border-t border-slate-800">
-      <div className="container mx-auto px-6 py-12">
+      <div className="container w-full mx-auto px-6 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div>
