@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Code, Wrench, Globe, Zap, ChefHat, Download, BookOpen, BookMarked, GitBranch } from 'lucide-react';
+import { Wrench, Globe, Zap, ChefHat, Download, BookOpen, BookMarked, GitBranch } from 'lucide-react';
 
 export interface Project {
   title: string;
@@ -90,19 +90,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    title: "Access Management Tool",
-    description: "Comprehensive solution for managing access requests to IT systems",
-    technologies: ["Azure AD", "PowerShell", "Identity Management", "Automation"],
-    icon: Code,
-    category: "Identity & Access Management",
-    highlights: [
-      "Streamlined access request workflows",
-      "Integration with Azure Active Directory",
-      "Automated provisioning and deprovisioning",
-      "Compliance reporting and auditing"
-    ]
-  },
-  {
     title: "Typing Speed Test",
     description: "Interactive web application to test typing skills and measure WPM",
     technologies: ["JavaScript", "HTML5", "CSS3", "Web APIs"],
@@ -118,18 +105,19 @@ export const projects: Project[] = [
     ]
   },
   {
-    title: "GymBroRecipes",
-    description: "Nutrition tracking tool for logging meals, macros, and hitting fitness goals",
-    technologies: ["TypeScript", "React", "Tailwind CSS", "Nutrition APIs"],
+    title: "GymBroRecipes Tracker",
+    description:
+      "Offline-first progressive web app for logging workouts, tracking nutrition, and monitoring body metrics; optional cloud sync via Supabase",
+    technologies: ["JavaScript", "PWA", "IndexedDB", "Supabase", "React"],
     icon: ChefHat,
     category: "Health & Fitness",
     liveUrl: "https://gymbrorecipes.netlify.app/",
-    githubUrl: "https://github.com/njvanas/GymBroRecipes",
+    githubUrl: "https://github.com/njvanas/GymBroRecipes-Tracker",
     highlights: [
-      "Daily nutrition and macro tracking",
-      "Meal and calorie logging",
-      "Recipe storage and quick add",
-      "Progress toward bulking, cutting, or maintaining"
+      "Local-first storage in the browser with IndexedDB",
+      "Workouts, nutrition, and body metrics in one place",
+      "Optional Supabase sync for backup and multi-device access",
+      "Installable PWA experience"
     ]
   },
   {
