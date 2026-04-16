@@ -1,5 +1,6 @@
 import React from 'react';
-import { Mail, Linkedin, MapPin, Send } from 'lucide-react';
+import { Mail, Linkedin, MapPin, Send, BadgeCheck } from 'lucide-react';
+import { credlyProfileUrl } from '../data/social';
 import { sanitizeInput, validateEmail, formRateLimiter, handleExternalLink } from '../utils/security';
 
 const Contact: React.FC = () => {
@@ -117,6 +118,27 @@ const Contact: React.FC = () => {
                       className="text-gray-300 hover:text-blue-400 transition-colors duration-300"
                     >
                       linkedin.com/in/njvanas
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4">
+                  <div className="p-3 bg-blue-600/20 rounded-full">
+                    <BadgeCheck className="w-6 h-6 text-blue-400" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold">Credly</h4>
+                    <a
+                      href={credlyProfileUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleExternalLink(credlyProfileUrl);
+                      }}
+                      className="text-gray-300 hover:text-blue-400 transition-colors duration-300"
+                    >
+                      credly.com/users/nj-van-as
                     </a>
                   </div>
                 </div>

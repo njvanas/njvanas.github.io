@@ -1,5 +1,6 @@
 import React from 'react';
-import { Heart, Mail, Linkedin, Github } from 'lucide-react';
+import { Heart, Mail, Linkedin, Github, BadgeCheck } from 'lucide-react';
+import { credlyProfileUrl } from '../data/social';
 import { handleExternalLink } from '../utils/security';
 
 const Footer: React.FC = () => {
@@ -49,6 +50,19 @@ const Footer: React.FC = () => {
                 aria-label="GitHub"
               >
                 <Github className="w-5 h-5" />
+              </a>
+              <a
+                href={credlyProfileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleExternalLink(credlyProfileUrl);
+                }}
+                className="p-2 bg-slate-800 hover:bg-blue-600 text-gray-400 hover:text-white rounded-lg transition-colors duration-300"
+                aria-label="Credly certifications"
+              >
+                <BadgeCheck className="w-5 h-5" />
               </a>
             </div>
           </div>
