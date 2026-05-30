@@ -147,7 +147,7 @@ const About: React.FC = () => {
             <p className="text-center text-gray-400 mb-8 max-w-2xl mx-auto">
               Microsoft cloud building blocks we design, integrate, and run on Azure.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
               {[
                 'Intune',
                 'SharePoint',
@@ -155,9 +155,11 @@ const About: React.FC = () => {
                 'Defender',
                 'Entra',
                 'Purview',
-              ].map((skill, index) => (
+                'SQL Database Administration',
+                'AVD & VMware VDI',
+              ].map((skill) => (
                 <div
-                  key={index}
+                  key={skill}
                   className="bg-slate-700/50 rounded-lg p-4 text-center hover:bg-slate-700/70 transition-colors duration-300"
                 >
                   <span className="text-gray-300 font-medium">{skill}</span>
