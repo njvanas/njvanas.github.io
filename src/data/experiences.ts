@@ -15,22 +15,22 @@ export const experiences: ExperienceItem[] = [
     period: "Dec 2025 - Present",
     current: true,
     description: [
-      "Design and implement M365 and Azure solutions for 60+ organizations",
-      "Identity and access with Entra ID, Conditional Access, and Microsoft Defender",
-      "Lead migrations and optimization; third-line expert for complex incidents",
-      "Automate operations with PowerShell and AI tooling; manage 40+ tenants"
+      "Design and deliver Microsoft 365 and Azure solutions for 60+ organizations",
+      "Identity and security with Entra ID, Conditional Access, Intune, Defender, SharePoint, and Teams",
+      "Third-line expert for migrations, tenant issues, and complex security incidents",
+      "Automate operations with PowerShell and Microsoft Graph across 40+ Microsoft 365 tenants"
     ]
   },
   {
     title: "Workspace Administrator",
     company: "Quion Groep",
     location: "Rotterdam, Netherlands",
-    period: "Jun 2025 - Nov 2025",
+    period: "Jun 2025 - Dec 2025",
     description: [
-      "Manage modern workspaces with M365 and Azure",
-      "Automate tasks using PowerShell and Graph API",
-      "Enforce governance with Conditional Access",
-      "Collaborate on cloud-first security initiatives"
+      "Administered Microsoft 365 and Azure workspaces: Entra ID, Exchange Online, SharePoint, and Teams",
+      "Managed device lifecycle with Intune and Autopilot; enforced endpoint compliance",
+      "Implemented Conditional Access, MFA, and governance aligned with security policies",
+      "Automated administration with PowerShell and Graph API; monitored environments with Defender and Azure Monitor"
     ]
   },
   {
@@ -39,10 +39,10 @@ export const experiences: ExperienceItem[] = [
     location: "Rotterdam, Netherlands",
     period: "Jun 2024 - Jun 2025",
     description: [
-      "Implemented SSO and MFA solutions",
-      "Automated user lifecycle and access reviews",
-      "Ensured GDPR and ISO compliance",
-      "Supported users with secure authentication"
+      "Implemented SSO, MFA, RBAC, and authorization matrices across enterprise systems",
+      "Automated identity lifecycle: provisioning, access reviews, and deprovisioning",
+      "Ensured compliance with GDPR, ISO 27001, ISAE 3402, and SOC 2 requirements",
+      "Investigated authentication incidents with cybersecurity teams and supported secure access for users"
     ]
   },
   {
@@ -51,10 +51,10 @@ export const experiences: ExperienceItem[] = [
     location: "Rotterdam, Netherlands",
     period: "Sep 2023 - May 2024",
     description: [
-      "Managed Azure tenants with Intune policies",
-      "Provided support via phone, email and Jira",
-      "Maintained hardware inventory and Active Directory",
-      "Improved onboarding and change processes"
+      "Managed multiple Azure tenants with Intune policies and hybrid Active Directory",
+      "Provided support to staff and clients via phone, email, and Jira",
+      "Maintained hardware inventory and on-premises Windows Server 2016 environments",
+      "Improved onboarding, offboarding, change requests, and logical access workflows for ISO and ISAE controls"
     ]
   },
   {
@@ -63,10 +63,10 @@ export const experiences: ExperienceItem[] = [
     location: "South Africa",
     period: "Oct 2021 - Aug 2023",
     description: [
-      "Administered Sophos firewall and hybrid AD",
-      "Oversaw servers on Hyper-V and Office 365",
-      "Managed licensing and IT budget",
-      "Streamlined user workflows and approvals"
+      "Managed Sophos firewall, VPN, VLANs, and DHCP for the Cape Town district",
+      "Administered Hyper-V servers (2012–2019), hybrid Azure AD, Office 365, and Teams",
+      "Oversaw engineering software licensing and IT budget for the Cape Town branch",
+      "Led one IT team member; streamlined user creation, approvals, and ticketing workflows"
     ]
   },
   {
@@ -75,9 +75,9 @@ export const experiences: ExperienceItem[] = [
     location: "South Africa",
     period: "Aug 2020 - Aug 2023",
     description: [
-      "Directed IT consulting and WordPress services",
-      "Focused on SEO and digital marketing",
-      "Managed client relations and sales"
+      "Directed IT consulting, WordPress development, and digital marketing services",
+      "Managed client relationships, sales, and project delivery",
+      "Focused on SEO and web solutions for small business clients"
     ]
   },
   {
@@ -86,10 +86,10 @@ export const experiences: ExperienceItem[] = [
     location: "Cape Town, South Africa",
     period: "Jan 2018 - Sep 2021",
     description: [
-      "Managed Radius servers and hosted environments",
-      "Handled SSL certificates and domain services",
-      "Maintained network, servers and VMs",
-      "Coordinated deployments and backups"
+      "Managed Ubuntu RADIUS servers, hosted client environments, and internal infrastructure",
+      "Migrated mail to Office 365 and administered SQL Server databases and upgrades",
+      "Operated Hyper-V, VMware, and VirtualBox VMs with Veeam, Altaro, and Cobian backups",
+      "Coordinated DevOps and manual deployments; maintained SSL certificates, DNS, VPN, and Wi‑Fi networks"
     ]
   },
   {
@@ -98,10 +98,10 @@ export const experiences: ExperienceItem[] = [
     location: "Somerset West, South Africa",
     period: "Aug 2016 - Dec 2017",
     description: [
-      "Maintained campus network and servers",
-      "Serviced desktops and printers",
-      "Assisted students with IT subjects",
-      "Supervised Pearson VUE exams"
+      "Maintained campus network, servers, and proprietary learning systems",
+      "Serviced student desktops and coordinated printer repairs",
+      "Supported students across IT subjects and course material",
+      "Assisted with oversight of Pearson VUE certification exams"
     ]
   },
   {
@@ -110,8 +110,8 @@ export const experiences: ExperienceItem[] = [
     location: "Somerset West, South Africa",
     period: "Mar 2016",
     description: [
-      "Performed stock taking and sales",
-      "Advised clients on suitable products"
+      "Performed stock taking and retail sales",
+      "Advised customers and referred them to suitable products"
     ]
   },
   {
@@ -120,9 +120,9 @@ export const experiences: ExperienceItem[] = [
     location: "Villiersdorp, South Africa",
     period: "Jan 2014 - Present",
     description: [
-      "Produce raw honey and pollination services",
-      "Promote sustainable beekeeping practices",
-      "Oversee operations and marketing"
+      "Produce raw honey and provide pollination services for local agriculture",
+      "Promote sustainable, ethical beekeeping and hive management",
+      "Oversee operations, marketing, and biodiversity-focused practices"
     ]
   }
 ];
