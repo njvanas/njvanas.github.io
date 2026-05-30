@@ -149,7 +149,7 @@ const About: React.FC = () => {
             <p className="text-center text-gray-400 mb-8 max-w-2xl mx-auto">
               Microsoft cloud building blocks we design, integrate, and run on Azure.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
               {coreExpertise.map((item) => (
                 <CoreExpertiseCard key={item.id} item={item} />
               ))}
