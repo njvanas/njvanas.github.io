@@ -1,7 +1,7 @@
 import React from 'react';
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import { slugify } from '../utils/slug';
-import experiences, { ExperienceItem } from '../data/experiences';
+import experiences from '../data/experiences';
 
 const Experience: React.FC = () => {
   return (
