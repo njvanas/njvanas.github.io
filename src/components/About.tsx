@@ -1,6 +1,8 @@
 import React from 'react';
 import { MapPin, Calendar, Award, Globe, ExternalLink } from 'lucide-react';
+import CoreExpertiseCard from './CoreExpertiseCard';
 import { certifications } from '../data/certifications';
+import { coreExpertise } from '../data/coreExpertise';
 import { credlyProfileUrl } from '../data/social';
 import { handleExternalLink } from '../utils/security';
 
