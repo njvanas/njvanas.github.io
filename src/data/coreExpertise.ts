@@ -3,8 +3,6 @@ export type CoreExpertiseItem = {
   label: string;
   iconSrc: string;
   iconAlt: string;
-  secondaryIconSrc?: string;
-  secondaryIconAlt?: string;
 };
 
 export const coreExpertise: CoreExpertiseItem[] = [
@@ -51,11 +49,21 @@ export const coreExpertise: CoreExpertiseItem[] = [
     iconAlt: 'Microsoft SQL Server',
   },
   {
-    id: 'avd-vdi',
-    label: 'AVD & VMware VDI',
+    id: 'avd',
+    label: 'AVD',
     iconSrc: '/icons/expertise/avd.svg',
     iconAlt: 'Azure Virtual Desktop',
-    secondaryIconSrc: '/icons/expertise/vmware.svg',
-    secondaryIconAlt: 'VMware',
+  },
+  {
+    id: 'vmware-vdi',
+    label: 'VMware VDI',
+    iconSrc: '/icons/expertise/vmware.svg',
+    iconAlt: 'VMware',
+  },
+  {
+    id: 'aks',
+    label: 'AKS',
+    iconSrc: '/icons/expertise/aks.svg',
+    iconAlt: 'Azure Kubernetes Service',
   },
 ];
