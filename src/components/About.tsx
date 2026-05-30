@@ -143,17 +143,18 @@ const About: React.FC = () => {
 
           {/* Skills Section */}
           <div className="mt-16">
-            <h3 className="text-2xl font-semibold text-white mb-8 text-center">Core Expertise</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <h3 className="text-2xl font-semibold text-white mb-3 text-center">Core Expertise</h3>
+            <p className="text-center text-gray-400 mb-8 max-w-2xl mx-auto">
+              Microsoft cloud building blocks we design, integrate, and run on Azure.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
               {[
-                'Microsoft 365 & Azure',
-                'Entra ID & Conditional Access',
-                'PowerShell & Automation',
-                'Intune & Autopilot',
-                'Multi-Tenant Architecture',
-                'Threat Detection & Response',
-                'Identity & Access Management',
-                'Security & Compliance'
+                'Intune',
+                'SharePoint',
+                'Teams',
+                'Defender',
+                'Entra',
+                'Purview',
               ].map((skill, index) => (
                 <div
                   key={index}

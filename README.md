@@ -19,6 +19,22 @@ This portfolio serves as a comprehensive showcase of my:
 - **Vite** for fast development and optimized builds
 - **GitHub Actions** for automated deployment
 
+## Auto-sync to GitHub
+
+Edits in this repo can be pushed to `main` automatically so GitHub Actions deploys the live site.
+
+| Method | When it runs |
+|--------|----------------|
+| **Cursor hooks** (`.cursor/hooks.json`) | After agent file edits and when an agent turn finishes |
+| **`npm run watch:sync`** | While the terminal is open, watches `src/`, `public/`, and `index.html` |
+| **`npm run sync`** | One-off commit and push |
+
+**Requirements:** Git must be able to push to `origin` without prompts (Git Credential Manager or `gh auth login`). Only changes on `main` are synced.
+
+To pause auto-sync temporarily: `set SYNC_DISABLE=1` (Windows) or `export SYNC_DISABLE=1` (macOS/Linux).
+
+Logs: `.cursor/sync.log` (gitignored).
+
 ## 🎯 What You'll Find
 
 ### 💼 Professional Experience

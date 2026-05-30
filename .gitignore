@@ -23,3 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Auto-sync state (hooks + watch:sync)
+.cursor/sync-state.json
+.cursor/sync.log

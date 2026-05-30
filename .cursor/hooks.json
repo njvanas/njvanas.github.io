@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "node scripts/sync-to-github.mjs"
+      }
+    ],
+    "stop": [
+      {
+        "command": "node scripts/sync-to-github.mjs --force"
+      }
+    ]
+  }
+}
