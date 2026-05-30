@@ -58,11 +58,10 @@ const Experience: React.FC = () => {
                     </div>
                   </div>
                   
-                  <ul className="space-y-2">
+                  <ul className="list-disc list-outside space-y-2 pl-5 text-gray-300 marker:text-blue-400">
                     {exp.description.map((item, itemIndex) => (
-                      <li key={itemIndex} className="text-gray-300 flex items-start">
-                        <span className="text-blue-400 mr-2 mt-2">•</span>
-                        <span>{item}</span>
+                      <li key={itemIndex} className="pl-1 leading-relaxed">
+                        {item}
                       </li>
                     ))}
                   </ul>
