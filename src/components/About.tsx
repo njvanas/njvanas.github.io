@@ -150,22 +150,8 @@ const About: React.FC = () => {
               Microsoft cloud building blocks we design, integrate, and run on Azure.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-              {[
-                'Intune',
-                'SharePoint',
-                'Teams',
-                'Defender',
-                'Entra',
-                'Purview',
-                'SQL Database Administration',
-                'AVD & VMware VDI',
-              ].map((skill) => (
-                <div
-                  key={skill}
-                  className="bg-slate-700/50 rounded-lg p-4 text-center hover:bg-slate-700/70 transition-colors duration-300"
-                >
-                  <span className="text-gray-300 font-medium">{skill}</span>
-                </div>
+              {coreExpertise.map((item) => (
+                <CoreExpertiseCard key={item.id} item={item} />
               ))}
             </div>
           </div>
