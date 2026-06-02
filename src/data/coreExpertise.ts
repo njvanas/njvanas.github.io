@@ -46,7 +46,7 @@ export const coreExpertise: CoreExpertiseItem[] = [
     id: 'sql',
     label: 'SQL Database Administration',
     iconSrc: '/icons/expertise/sql.svg',
-    iconAlt: 'Microsoft SQL Server',
+    iconAlt: 'Azure SQL',
   },
   {
     id: 'avd',
