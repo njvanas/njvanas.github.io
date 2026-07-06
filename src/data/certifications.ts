@@ -42,8 +42,7 @@ export const certifications: Certification[] = [
   },
   {
     title: 'Microsoft Certified: Azure Fundamentals',
-    badgeImageUrl:
-      'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg',
+    badgeImageUrl: '/certifications/azure-fundamentals.svg',
     credentialUrl:
       'https://learn.microsoft.com/en-us/users/njvanas-2563/credentials/1b0dfb6c13cb87ef',
   },
