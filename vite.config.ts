@@ -27,6 +27,7 @@ function contentSecurityPolicy(): Plugin {
         "font-src 'self'",
         "connect-src 'self'",
         "object-src 'none'",
+        "frame-src 'none'",
         "base-uri 'self'",
         "form-action 'self' mailto:",
         'upgrade-insecure-requests',
