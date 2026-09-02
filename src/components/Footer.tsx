@@ -87,6 +87,11 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
+                <a href="#supply-chain" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  Supply chain
+                </a>
+              </li>
+              <li>
                 <a href="#contact" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Contact
                 </a>

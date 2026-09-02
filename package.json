@@ -11,7 +11,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "sync": "node scripts/sync-to-github.mjs --force",
-    "watch:sync": "node scripts/watch-sync.mjs"
+    "watch:sync": "node scripts/watch-sync.mjs",
+    "refresh:dependabot": "node scripts/refresh-dependabot.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.577.0",

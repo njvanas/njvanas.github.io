@@ -35,6 +35,7 @@ const Header: React.FC = () => {
         label: proj.title,
       })),
     },
+    { href: '#supply-chain', label: 'Supply chain' },
     { href: '#contact', label: 'Contact' },
   ];
 
