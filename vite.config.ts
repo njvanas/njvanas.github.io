@@ -28,6 +28,8 @@ function contentSecurityPolicy(): Plugin {
         "connect-src 'self'",
         "object-src 'none'",
         "frame-src 'none'",
+        "worker-src 'none'",
+        "media-src 'none'",
         "base-uri 'self'",
         "form-action 'self' mailto:",
         'upgrade-insecure-requests',

@@ -19,12 +19,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
         with:
           persist-credentials: false
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: '24'
           cache: 'npm'
@@ -38,11 +38,12 @@ jobs:
       - name: Build
         run: npm run build
 
-      # Stay on v3: v4+ omits dotfiles by default and would drop dist/.well-known/security.txt
+      # v5 + include-hidden-files keeps dist/.well-known/security.txt (omitted by default since v4)
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./dist
+          include-hidden-files: true
 
   deploy:
     environment:
