@@ -22,7 +22,10 @@ function contentSecurityPolicy(): Plugin {
       const csp = [
         "default-src 'self'",
         `script-src 'self' ${[...hashes].join(' ')}`.trim(),
+        "script-src-attr 'none'",
         "style-src 'self' 'unsafe-inline'",
+        "style-src-elem 'self'",
+        "style-src-attr 'unsafe-inline'",
         "img-src 'self' data: https://images.credly.com",
         "font-src 'self'",
         "connect-src 'self'",
