@@ -5,5 +5,5 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.credly.com; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; worker-src 'none'; media-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; style-src-elem 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: https://images.credly.com; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; worker-src 'none'; media-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'none'; upgrade-insecure-requests
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload

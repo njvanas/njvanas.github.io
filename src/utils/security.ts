@@ -47,7 +47,7 @@ export const handleExternalLink = (url: string): void => {
   // Validate URL
   try {
     const urlObj = new URL(url);
-    if (!['http:', 'https:'].includes(urlObj.protocol)) {
+    if (urlObj.protocol !== 'https:') {
       throw new Error('Invalid protocol');
     }
   } catch {
