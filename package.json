@@ -29,7 +29,8 @@
     "vite": "^8.0.16"
   },
   "overrides": {
-    "nanoid": "3.3.19"
+    "nanoid": "3.3.19",
+    "source-map-js": "1.2.2"
   },
   "keywords": [],
   "author": "Dolfie",
