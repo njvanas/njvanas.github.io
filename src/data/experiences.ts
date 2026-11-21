@@ -121,6 +121,7 @@ export const experiences: ExperienceItem[] = [
     company: "Malagas Byeboerdery",
     location: "Villiersdorp, South Africa",
     period: "Jan 2014 - Present",
+    current: true,
     description: [
       "Produce raw honey and provide pollination services for local agriculture",
       "Promote sustainable, ethical beekeeping and hive management",
