@@ -76,10 +76,10 @@ export const experiences: ExperienceItem[] = [
     period: "Aug 2020 - Present",
     current: true,
     description: [
-      "Run a personal MSP delivering managed IT and cloud services to clients across multiple regions",
+      "Operate an MSP delivering managed IT and cloud services to clients across multiple regions",
       "Design, administer, and support Azure environments for cloud-first organizations—identity, workloads, and operations",
       "Deliver on-premises solutions for businesses: servers, networking, CCTV, desktops, and broader IT infrastructure",
-      "Own the full engagement end-to-end: advisory, project delivery, and ongoing support as sole proprietor"
+      "Provide advisory, project delivery, and ongoing support as sole proprietor"
     ]
   },
   {
