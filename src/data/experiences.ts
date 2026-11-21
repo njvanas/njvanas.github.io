@@ -73,7 +73,8 @@ export const experiences: ExperienceItem[] = [
     title: "Managing Director",
     company: "NVA PC Tech",
     location: "South Africa",
-    period: "Aug 2020 - Aug 2023",
+    period: "Aug 2020 - Present",
+    current: true,
     description: [
       "Directed IT consulting, WordPress development, and digital marketing services",
       "Managed client relationships, sales, and project delivery",
