@@ -46,4 +46,10 @@ export const certifications: Certification[] = [
     credentialUrl:
       'https://learn.microsoft.com/en-us/users/njvanas-2563/credentials/1b0dfb6c13cb87ef',
   },
+  {
+    title: 'Microsoft Certified: Azure Administrator Associate',
+    badgeImageUrl: '/certifications/azure-administrator-associate.svg',
+    credentialUrl:
+      'https://learn.microsoft.com/en-us/users/NJvanAs/credentials/F1121EAD63D11D87',
+  },
 ];
