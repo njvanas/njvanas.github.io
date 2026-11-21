@@ -76,9 +76,10 @@ export const experiences: ExperienceItem[] = [
     period: "Aug 2020 - Present",
     current: true,
     description: [
-      "Directed IT consulting, WordPress development, and digital marketing services",
-      "Managed client relationships, sales, and project delivery",
-      "Focused on SEO and web solutions for small business clients"
+      "Run a personal MSP delivering managed IT and cloud services to clients across multiple regions",
+      "Design, administer, and support Azure environments for cloud-first organizations—identity, workloads, and operations",
+      "Deliver on-premises solutions for businesses: servers, networking, CCTV, desktops, and broader IT infrastructure",
+      "Own the full engagement end-to-end: advisory, project delivery, and ongoing support as sole proprietor"
     ]
   },
   {
