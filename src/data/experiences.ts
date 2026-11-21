@@ -89,7 +89,7 @@ export const experiences: ExperienceItem[] = [
     period: "Jan 2018 - Sep 2021",
     description: [
       "Managed Ubuntu RADIUS servers, hosted client environments, and internal infrastructure",
-      "Migrated mail to Office 365 and administered SQL Server databases and upgrades",
+      "Migrated Exchange on-premises to Office 365 and administered SQL Server databases and upgrades",
       "Operated Hyper-V, VMware, and VirtualBox VMs with Veeam, Altaro, and Cobian backups",
       "Coordinated DevOps and manual deployments; maintained SSL certificates, DNS, VPN, and Wi‑Fi networks"
     ]
